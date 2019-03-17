@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Ibeacon"
+  id="myeclipse.1502865084850"
+  context-root="/Ibeacon"
+  j2ee-spec="6.0"
+  archive="Ibeacon.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr//dwr20.dtd">
+<dwr>
+	
+	<allow>
+		<convert converter="bean" match="com.ictwsn.bean.*"/>
+	  	<convert converter="string" match="java.lang.String"/>
+	  	
+		<create javascript="aService" creator="spring">
+			<param name="beanName" value="aService"/>
+				<include method="checkOperatorUuid"/>	<!--  -->
+				<include method="checkOperatorMajor"/>	<!--  -->
+				
+		</create>
+		<create javascript="oService" creator="spring">
+			<param name="beanName" value="oService"/>
+				<include method="query_client"/>	<!--  -->
+				<include method="query_uuidMajor"/>	<!--  -->
+				
+		</create>
+	
+	</allow>
+	
+</dwr>

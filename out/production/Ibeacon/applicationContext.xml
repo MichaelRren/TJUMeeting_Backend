@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd 
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd 
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	    http://www.directwebremoting.org/schema/spring-dwr
+        http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd"
+
+	default-lazy-init="true">
+
+	<!-- 自动扫描所有注解 -->
+	<context:annotation-config />
+	<context:component-scan base-package="com.ictwsn.bean" />
+	<context:component-scan base-package="com.ictwsn.dao" />
+	<context:component-scan base-package="com.ictwsn.service" />
+	<context:component-scan base-package="com.ictwsn.action" />
+	<context:component-scan base-package="com.ictwsn.util" />
+	
+	<!-- 引入外部properties文件 -->
+	<context:property-placeholder location="classpath:db.properties"/>
+
+	<!--MySQL数据源配置 -->
+	<bean id="userDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass">
+			<value>${driver}</value>
+		</property>
+		<!-- 202.206.249.16 -->
+		<!-- 10.22.0.156 -->
+		<property name="jdbcUrl">
+			<value>${url}</value>
+		</property>
+		<property name="user">
+			<value>${user}</value>
+		</property>
+		<property name="password">
+			<value>${password}</value>
+		</property>
+		<property name="minPoolSize">
+			<value>3</value>
+		</property>
+		<property name="maxPoolSize">
+			<value>100</value>
+		</property>
+		<property name="maxIdleTime">
+			<value>120</value>
+		</property>
+		<property name="acquireIncrement">
+			<value>5</value>
+		</property>
+		<property name="acquireRetryAttempts">
+			<value>3</value>
+		</property>
+		<property name="preferredTestQuery">
+			<value>SELECT 1</value>
+		</property>
+		<property name="idleConnectionTestPeriod">
+			<value>120</value>
+		</property>
+		<property name="testConnectionOnCheckout">
+			<value>true</value>
+		</property>
+		<property name="checkoutTimeout">
+			<value>30000</value>
+		</property>
+		<property name="numHelperThreads">
+			<value>10</value>
+		</property>
+	</bean>
+	
+
+	<!-- 配置 事务管理器 -->
+	<bean id="userTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="userDataSource" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="userTransactionManager" />
+	<bean id="userTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="userDataSource" />
+	</bean>
+
+<!-- 
+	<bean id="log4jdbcInterceptor" class="net.sf.log4jdbc.DataSourceSpyInterceptor" />
+	<bean id="dataSourceLog4jdbcAutoProxyCreator"
+		class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<property name="interceptorNames">
+			<list>
+				<value>log4jdbcInterceptor</value>
+			</list>
+		</property>
+		<property name="beanNames">
+			<list>
+				<value>userDataSource</value>
+			</list>
+		</property>
+	</bean>
+	
+    
+     <bean id="doJob2Trigger" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="getUserInfoJob"></property>  
+        <property name="cronExpression"> 
+            <value>0 0 2 * * ?</value>  
+        </property>  
+    </bean>
+    -->  
+    <!-- 调度工厂 -->  
+    <!--
+    <bean id="startQuartz" lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+        <property name="triggers">  
+            <list>  
+               <ref bean="doJob1Trigger"/>
+               
+            </list>  
+        </property>  
+    </bean>  
+	 -->
+</beans>
