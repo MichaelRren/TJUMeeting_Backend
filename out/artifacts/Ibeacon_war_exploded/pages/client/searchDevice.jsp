@@ -52,7 +52,7 @@
 							%> 
 							<option value="deviceName">宾客姓名</option>
 							<option value="clientName">宾客单位</option>
-							<option value="operatorName">宾客职务</option>
+							<option value="operatorName">抵达站</option>
 							<%
 							}
 							%>
@@ -87,10 +87,10 @@
 		</div>
 		<table class="table table-hover text-center">
 			<tr>
-				<th width="140px">姓名</th>
-				<th width="80px">手机号码</th>
+				<th width="100px">姓名</th>
+				<th width="100px">手机号码</th>
 				<th width="80px">角色</th>
-				<th width="174px">随行人员手机</th>
+				<th width="200px">随行人员手机</th>
 				<th width="120px">所在单位</th>
 				<th width="120px">职务</th>
 				<th width="160px">职称</th>
@@ -107,18 +107,18 @@
 			</tr>
 			<c:forEach var="list" items="${dblist}">
 				<tr id="device_tr_${list.deviceId}">
-					<td width="140px" title="${list.deviceName}">${list.deviceName}</td>
-					<td width="80px">${list.major}</td>
+					<td width="100px" title="${list.deviceName}">${list.deviceName}</td>
+					<td width="100px">${list.major}</td>
 					<td width="80px">${list.minor}</td>
 					<td width="174px" title="${list.deviceInfo}">${list.deviceInfo}</td>
 					<td width="120px">${list.clientName}</td>
 					<td width="120px">${list.operatorName}</td>
 					<td width="160px">${list.updateTime}</td>
 					<td width="140px" title="${list.deviceName}">${list.deviceName}</td>
-					<td width="80px">${list.major}</td>
+					<td width="80px">${list.updateTime}</td>
 					<td width="80px">${list.minor}</td>
 					<td width="174px" title="${list.deviceInfo}">${list.deviceInfo}</td>
-					<td width="120px">${list.clientName}</td>
+					<td width="120px">${list.updateTime}</td>
 					<td width="120px">${list.operatorName}</td>
 					<td width="160px">${list.updateTime}</td>
 					<th width="150px"></td>
@@ -132,7 +132,7 @@
 			</c:forEach>
 			
 			<tr>
-				<td colspan="8"><div class="pagelist">
+				<td colspan="20"><div class="pagelist">
 						<c:choose>
 							<c:when test="${page==1}">
 								<a>上一页</a>

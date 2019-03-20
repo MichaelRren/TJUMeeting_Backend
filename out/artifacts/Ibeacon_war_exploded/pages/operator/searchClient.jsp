@@ -66,7 +66,10 @@
 		<tr>
 			<th width="200px">联络员姓名</th>
 			<th width="200px">联络人员电话</th>
+			<th width="150px">负责的宾客姓名</th>
 			<th width="150px">负责贵宾手机号</th>
+			<th width="150px">接待司机姓名</th>
+			<th width="150px">接待司机电话</th>
 			<th width="150px">用户邮箱</th>
 			<th width="200px">所属运营商</th>
 			<th width="124px">操作</th>
@@ -76,7 +79,10 @@
 				<td width="200px">${list.name}</td>
 				<td width="200px">${list.password}</td>
 				<td width="150px">${list.phone}</td>
+				<td width="150px">${list.phone}</td>
+				<td width="150px">${list.phone}</td>
 				<td width="150px">${list.email}</td>
+				<td width="200px">${list.operatorName}</td>
 				<td width="200px">${list.operatorName}</td>
 				<td width="124px"><input type="button" id="editButton" onclick="javascript:window.location.href='updateClientBefore.do?clientId=${list.id}'" value="修改">&nbsp;<input type="button" id="deleteButton" onclick="javascript:deleteClient(${list.id})" value="删除"></td>
 			</tr>

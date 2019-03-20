@@ -39,37 +39,37 @@
 	  </div>
 	<form action="" method="post" class="form form-horizontal" id="form-article-add">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>用户名称：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>联络人员姓名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${cb.name}" readonly="readonly" maxlength='20' placeholder="请输入用户名称(必填)" id="clientName" name="clientName">
+				<input type="text" class="input w50" value="${cb.name}" readonly="readonly" maxlength='20' placeholder="请输入联络人员姓名(必填)" id="clientName" name="clientName">
 				<span id="name_notice" class="c-red"></span>
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>用户密码：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>联络人员电话：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="password" class="input w50" value="${cb.password}" maxlength='20' placeholder="请输入用户密码(必填)" id="clientPassword" name="clientPassword">
+				<input type="text" class="input w50" value="${cb.password}" maxlength='20' placeholder="请输入联络人员电话(必填)" id="clientPassword" name="clientPassword">
 				<span id="password_notice" class="c-red"></span>
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>确认密码：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>负责的宾客姓名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="password" class="input w50" value="${cb.password}" maxlength='20' placeholder="请再次输入密码(必填)" id="clientPassword_confirm" name="clientPassword_confirm">
+				<input type="text" class="input w50" value="${cb.password}" maxlength='20' placeholder="请输入负责的贵宾姓名(必填)" id="clientPassword_confirm" name="clientPassword_confirm">
 				<span id="password_confirm_notice" class="c-red"></span>
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>联系电话：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>负责的宾客电话：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${cb.phone}" maxlength='13' placeholder="请输入用户电话" id="clientPhone" name="clientPhone">
+				<input type="text" class="input w50" value="${cb.phone}" maxlength='13' placeholder="请输入负责的宾客电话" id="clientPhone" name="clientPhone">
 				<span id="phone_notice" class="c-red"></span>
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>用户邮箱：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red"></span>接待司机姓名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${cb.email}" maxlength='50' placeholder="请输入用户邮箱" id="clientEmail" name="clientEmail">
+				<input type="text" class="input w50" value="${cb.email}" maxlength='50' placeholder="请输入接待司机姓名" id="clientEmail" name="clientEmail">
 				<span id="email_notice" class="c-red"></span>
 			</div>
 		</div>

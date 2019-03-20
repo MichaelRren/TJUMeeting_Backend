@@ -291,7 +291,7 @@ public class OperatorAction {
 			ClientBean cb=oService.getClientById(clientId);
 			model.addAttribute("cb",cb);
 			model.addAttribute("page",page);
-			
+
 			return GetHttp.isMobileDevice(request)?"pages/operator/viewClient":"MobilePages/operator/viewClient";
 		}catch(Exception e){
 			logger.error("searchClientById error"+e);

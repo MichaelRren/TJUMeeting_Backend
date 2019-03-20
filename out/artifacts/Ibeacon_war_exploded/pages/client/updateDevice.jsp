@@ -38,43 +38,49 @@
 	  </div>
 	<form action="updateDevice.do" method="post" class="form form-horizontal" id="updateDeviceForm" name="updateDeviceForm" enctype="multipart/form-data">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备名称：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>宾客姓名：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${db.deviceName}" placeholder="请输入设备名称(必填)" maxlength='20' id="deviceName" name="deviceName">
+				<input type="text" class="input w50" value="${db.deviceName}" place	holder="请输入宾客姓名(必填)" maxlength='20' id="deviceName" name="deviceName">
 				<span id="name_notice" class="c-red"></span>
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>设备UUID：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>手机号码：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${db.uuid}" placeholder="请输入设备UUID(必填)" maxlength='36' readonly="readonly" id="uuid" name="uuid">
+				<input type="text" class="input w50" value="${db.uuid}" readonly="readonly" placeholder="请输入手机号码(必填)" maxlength='36' id="uuid" name="uuid">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>major：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>用户角色：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${db.major}" placeholder="请输入设备major(0-65532)" maxlength='5' readonly="readonly" id="major" name="major">
+				<input type="text" class="input w50" value="${db.major}" placeholder="请输入用户角色" maxlength='5' id="major" name="major">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>major：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所在单位：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${db.minor}" placeholder="请输入设备minor(0-65532)" maxlength='5' readonly="readonly" id="minor" name="minor">
+				<input type="text" class="input w50" value="${db.minor}" placeholder="请输入用户所在单位" maxlength='5' id="minor" name="minor">
 				<span id="minor_notice" class="c-red"></span>
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">设备描述：</label>
+			<label class="form-label col-xs-4 col-sm-2">随行人员手机号码：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${db.deviceInfo}" placeholder="请输入设备描述" maxlength='200' id="deviceInfo" name="deviceInfo">
+				<input type="text" class="input w50" value="${db.deviceInfo}" placeholder="请输入随行人员手机号码" maxlength='200' id="deviceInfo" name="deviceInfo">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">展示标题：</label>
+			<label class="form-label col-xs-4 col-sm-2">宾客职称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input w50" value="${db.title}" placeholder="请输入展示标题" maxlength='20' id="title" name="title">
+				<input type="text" class="input w50" value="${db.title}" placeholder="请输入宾客职称" maxlength='20' id="title" name="title">
 			</div>
 		</div>
+
+
+
+
+
+
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">更换视频：</label>
 			<div class="formControls col-xs-8 col-sm-9"> 
