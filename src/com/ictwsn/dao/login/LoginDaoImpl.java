@@ -56,9 +56,9 @@ public class LoginDaoImpl extends MySQLBaseDao implements LoginDao {
 			rb.setUuid("");
 			rb.setMajor("");
 		}
-	
+
 		return rb;
-	
+
 	}
 
 	@Override

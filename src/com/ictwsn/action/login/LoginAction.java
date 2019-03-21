@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.ictwsn.bean.RoleBean;
 import com.ictwsn.service.client.ClientService;
 import com.ictwsn.service.login.LoginService;
-import com.ictwsn.util.GetHttp;
 import com.ictwsn.util.InsertData;
 import com.ictwsn.util.WordCount;
 
@@ -47,24 +46,24 @@ public class LoginAction{
 	 * @return
 	 * @throws UnsupportedEncodingException 
 	 */
-	@RequestMapping(value="/login.do", method = RequestMethod.POST)
+	@RequestMapping(value="/adminlogin.do", method = RequestMethod.POST)
 	public String login(HttpServletRequest request,HttpSession session,Model model,
 			@RequestParam(value="userName",required=true) String userName,
 			@RequestParam(value="password",required=true) String password,
 			@RequestParam(value="roleName",required=true) String roleName) throws UnsupportedEncodingException{
 		try{
 			if(session.getAttribute("RoleBean")!=null){
-				return GetHttp.isMobileDevice(request)?"pages/manageCenter":"MobilePages/manageCenter";
+				return "pages/adminManageCenter";
 			}
 			RoleBean rb=lService.Login(userName,password,roleName); //获取登录的用户权限
 			if(rb.getAuthroity()!=null&&!rb.getAuthroity().equals("")){
 				session.setAttribute("RoleBean",rb);
-				return GetHttp.isMobileDevice(request)?"pages/manageCenter":"MobilePages/manageCenter";
+				return "pages/adminManageCenter";
 			}else{
 				model.addAttribute("message",lService.getErrorType(userName, password, roleName));//-1 用户名或者密码错误 -2用户类型不匹配
 				model.addAttribute("userName",userName);
 				model.addAttribute("password",password);
-				return "login";
+				return "adminLogin";
 			}
 
 		}catch(Exception e){
@@ -75,47 +74,17 @@ public class LoginAction{
 
 
 	}
-	/**
-	 * 登录请求get版
-	 * 实现页面跳转,提升用户友好性
-	 * @param request
-	 * @param session
-	 * @param model
-	 * @param userName 用户名
-	 * @param password 密码
-	 * @param roleName
-	 * @return
-	 * @throws UnsupportedEncodingException 
-	 */
-	@RequestMapping(value="/login.do", method = RequestMethod.GET)
-	public String login_(HttpServletRequest request,HttpSession session,Model model) throws UnsupportedEncodingException{
-		try{	
-			if(session.getAttribute("RoleBean")!=null){
-				return GetHttp.isMobileDevice(request)?"pages/manageCenter":"MobilePages/manageCenter";
-			}else{
-				return "redirect:/login.jsp";
-			}
 
-		}catch(Exception e){
-			logger.error("login error"+e);
-			e.printStackTrace();
-			return "pages/error/404";
-		}
-
-
-	}
 	@RequestMapping("/logoff.do")
 	public String logoff(HttpServletRequest request,HttpSession session){
 		try{
 			session.removeAttribute("RoleBean");
-			return "redirect:/login.jsp";
+			return "redirect:/adminLogin.jsp";
 		}catch(Exception e){
 			logger.error("logoff error"+e);
 			e.printStackTrace();
 			return "pages/error/404";
 		}
-
-
 	}
 	
 	@RequestMapping("/test.action")
@@ -152,4 +121,36 @@ public class LoginAction{
 			 
 		} 
 	}
+
+	/**
+	 * 登录请求get版
+	 * 实现页面跳转,提升用户友好性
+	 * @param request
+	 * @param session
+	 * @param model
+	 * @param userName 用户名
+	 * @param password 密码
+	 * @param roleName
+	 * @return
+	 * @throws UnsupportedEncodingException
+	 */
+	/**
+	@RequestMapping(value="/login.do", method = RequestMethod.GET)
+	public String login_(HttpServletRequest request,HttpSession session,Model model) throws UnsupportedEncodingException{
+		try{
+			if(session.getAttribute("RoleBean")!=null){
+				return GetHttp.isMobileDevice(request)?"pages/manageCenter":"MobilePages/manageCenter";
+			}else{
+				return "redirect:/adminLogin.jsp";
+			}
+
+		}catch(Exception e){
+			logger.error("login error"+e);
+			e.printStackTrace();
+			return "pages/error/404";
+		}
+
+
+	}
+	*/
 }

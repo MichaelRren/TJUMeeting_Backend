@@ -30,10 +30,10 @@
 <div class="leftnav">
   <div class="leftnav-title"><strong><span class="icon-list"></span>管理列表</strong></div>
   <ul style="display:block">
-      <li id="item_1"><a href="searchDevice.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>宾客信息管理</a></li>
-      <li id="item_2"><a href="searchClient.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>联络人员管理</a></li>
-      <li id="item_3"><a href="viewSign.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>签到信息管理</a></li>
-      <li id="item_4"><a href="searchOperator.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>会议资料管理</a></li>
+      <li id="item_1"><a href="searchDevice.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>个人信息</a></li>
+      <li id="item_2"><a href="searchClient.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>会议信息</a></li>
+      <li id="item_3"><a href="viewSign.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>资料下载</a></li>
+      <li id="item_4"><a href="searchOperator.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>(vip)联络员与司机信息</a></li>
   </ul>   
 </div>
 <script type="text/javascript">

@@ -35,7 +35,7 @@
 <body>
 <div class="page-container">
 	<div class="row cl" style="margin-top: -20px;margin-left: -220px;">
-			<label class="bread"><a href="searchClient.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" style="text-decoration: none;"><<返回</a></label>
+			<label class="bread"><a href="viewContact.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" style="text-decoration: none;"><<返回</a></label>
 	  </div>
 	<form action="" method="post" class="form form-horizontal" id="form-article-add">
 		<div class="row cl">

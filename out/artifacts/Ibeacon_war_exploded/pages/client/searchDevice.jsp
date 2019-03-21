@@ -124,8 +124,7 @@
 					<th width="150px"></td>
 					<th width="150px">备注</th>
 					<td width="150px"><input type="button" id="editButton"
-						onclick="javascript:window.location.href='updateDeviceBefore.do?deviceId=${list.deviceId}'"
-						value="修改">&nbsp;<input type="button" id="deleteButton"
+						<input type="button" id="deleteButton"
 						onclick="deleteDevice(${list.deviceId},'${list.imageUrl}','${list.videoUrl}')"
 						value="删除"></td>
 				</tr>

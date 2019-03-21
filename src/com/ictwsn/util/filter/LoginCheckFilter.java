@@ -29,7 +29,7 @@ public class LoginCheckFilter implements Filter {
 		HttpServletRequest r =(HttpServletRequest)request;
 		HttpSession session = r.getSession();
 		String requestUri = r.getRequestURI();
-		if(requestUri.endsWith("login.jsp") || requestUri.endsWith("login.do"))
+		if(requestUri.endsWith("adminLogin.jsp") || requestUri.endsWith("login.do"))
 		{
 			chain.doFilter(request,response);
 			return;
@@ -37,7 +37,7 @@ public class LoginCheckFilter implements Filter {
 			chain.doFilter(request,response);
 			return;
 		}else{
-			((HttpServletResponse)response).sendRedirect("login.jsp");
+			((HttpServletResponse)response).sendRedirect("adminLogin.jsp");
 			return;
 		}
 

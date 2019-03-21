@@ -25,13 +25,13 @@
   <div class="logo margin-big-left fadein-top">
     <h1><img src="images/TJULogo.jpg" class="radius-circle rotate-hover" height="50" alt="" />天津大学会议后台管理中心</h1>
   </div>
-  <div class="head-l"><a href="login.do?userName=-1&password=-1&roleName=-1" class="button button-little bg-green"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp; &nbsp;&nbsp;<a class="button button-little bg-red" href="logoff.do"><span class="icon-power-off"></span> 退出登录</a> </div>
+  <div class="head-l"><a href="adminlogin.do?userName=-1&password=-1&roleName=-1" class="button button-little bg-green"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp; &nbsp;&nbsp;<a class="button button-little bg-red" href="logoff.do"><span class="icon-power-off"></span> 退出登录</a> </div>
 </div>
 <div class="leftnav">
   <div class="leftnav-title"><strong><span class="icon-list"></span>管理列表</strong></div>
   <ul style="display:block">
-      <li id="item_1"><a href="searchDevice.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>宾客信息管理</a></li>
-      <li id="item_2"><a href="searchClient.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>联络人员管理</a></li>
+      <li id="item_1"><a href="viewUserInfo.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>宾客信息管理</a></li>
+      <li id="item_2"><a href="viewContact.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>联络人员管理</a></li>
       <li id="item_3"><a href="viewSign.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>签到信息管理</a></li>
       <li id="item_4"><a href="searchOperator.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right"><span class="icon-caret-right"></span>会议资料管理</a></li>
   </ul>   
@@ -61,12 +61,12 @@ $(function(){
 });
 </script>
 <ul class="bread">
-  <li><a href="searchDevice.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right" class="icon-home"> 首页</a></li>
+  <li><a href="viewUserInfo.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" target="right" class="icon-home"> 首页</a></li>
   <li><a id="a_leader_txt">管理中心</a></li>
   <li><b>当前用户：</b><span style="color:red;"><%=rb.getUserName()%></span><b>&nbsp;角色：</b><span><%=rb.getRoleName()%></span>
 </ul>
 <div class="admin">
-  <iframe scrolling="auto" rameborder="0" src="searchDevice.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" name="right" width="100%" height="100%"></iframe>
+  <iframe scrolling="auto" rameborder="0" src="viewUserInfo.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" name="right" width="100%" height="100%"></iframe>
 </div>
 </body>
 </html>

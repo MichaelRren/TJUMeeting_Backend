@@ -59,7 +59,7 @@ public class OperatorAction {
 				model.addAttribute("operatorList",operatorList);
 				return GetHttp.isMobileDevice(request)?"pages/operator/addClient":"MobilePages/operator/addClient";
 			}else{
-				return "redirect:/login.jsp";
+				return "redirect:/adminLogin.jsp";
 			}
 
 		}catch(Exception e){

@@ -70,7 +70,7 @@ public class ClientAction {
 			
 				return GetHttp.isMobileDevice(request)?"pages/client/addDevice":"MobilePages/client/addDevice";
 			}else{
-				return "redirect:/login.jsp";
+				return "redirect:/adminLogin.jsp";
 			}
 
 		}catch(Exception e){

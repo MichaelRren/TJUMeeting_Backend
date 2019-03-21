@@ -44,7 +44,7 @@
         
       <li style="float:left;"><span style="float:left;">用户类型:</span></li>
         <li style="float:right;"><select  name="selectUserType" class="input" style="width:230px; line-height:17px;" id="selectUserType" onChange="setType()">
-			  <option value="adminer">超级管理员</option>
+			  <option value="adminer">参会来宾</option>
             </select>
 		</li>
 		  

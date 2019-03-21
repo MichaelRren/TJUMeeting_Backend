@@ -229,7 +229,7 @@
 										</c:otherwise>
 									</c:choose>
 					
-										<form id="loginForm" name="loginForm" action="login.do" method="post">
+										<form id="loginForm" name="loginForm" action="/adminLogin.do" method="post">
 											<div class='g_globalLine'>
 												<input type='text' maxlength='50' id='userName' name='userName'
 													class='itemEdit g_input mustItem' placeholder='请输入帐号' value="${userName}"><span

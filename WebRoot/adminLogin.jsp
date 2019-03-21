@@ -20,10 +20,10 @@
         <div class="xs6 xm4 xs3-move xm4-move">
             <div style="height:150px;"></div>
             <div class="media media-y margin-big-bottom">           
-            </div>         
-            <form id="loginForm" name="loginForm" action="login.do" method="post">
+            </div>
+            <form id="loginForm" name="loginForm" action="adminlogin.do" method="post">
             <div class="panel loginbox">
-                <div class="text-center margin-big padding-big-top"><h1>iBeacon后台管理中心</h1></div>
+                <div class="text-center margin-big padding-big-top"><h1>天津大学会议后台管理中心</h1></div>
                 <div class="panel-body" style="padding:30px; padding-bottom:10px; padding-top:10px;">
                     <div class="form-group">
                         <div class="field field-icon-right">
