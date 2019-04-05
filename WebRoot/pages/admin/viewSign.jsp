@@ -11,9 +11,9 @@
 <%
     String path = request.getContextPath();
     //获取当前角色的权限信息
-    RoleBean rb = null;
-    if ((RoleBean) session.getAttribute("RoleBean") != null) {
-        rb = (RoleBean) session.getAttribute("RoleBean");
+    AdminBean rb = null;
+    if ((AdminBean) session.getAttribute("admin") != null) {
+        rb = (AdminBean) session.getAttribute("admin");
     }
 %>
 
@@ -35,24 +35,21 @@
 <div class="panel admin-panel">
     <div class="panel-head"><strong class="icon-reorder"> 宾客签到列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
     <div class="padding border-bottom">
-        <form method="post" action="searchClientByCondition.do"
-              id="searchClientByConditionForm" name="searchClientByConditionForm">
+        <form method="post" action="searchSignByCondition.do"
+              id="searchSignByConditionForm" name="searchSignByConditionForm">
             <ul class="search" style="padding-left:10px;">
                 <li> <a class="button border-main icon-plus-square-o" href="#"> 签到情况查询</a> </li>
                 <li>
                     <select name="selectSearchType" id="selectSearchType" class="input" style="width:200px; line-height:17px;" onchange="setSearchType();">
-                        <option value="clientName">宾客姓名</option>
-                        <option value="operatorName">宾客单位</option>
+                        <option value="userName">宾客姓名</option>
                     </select>
                 </li>
 
                 <li><input type="text" placeholder="请输入搜索关键字" name="keyword" id="keyword" class="input" style="width:250px; line-height:17px;display:inline-block" />
-                    <input type="hidden" value="clientName" name="type" id="type"/>
-                    <input type="hidden" value="<%=rb.getUserId()%>" name="userId" id="userId"/>
-                    <input type="hidden" value="<%=rb.getRoleName()%>" name="roleName" id="roleName"/>
+                    <input type="hidden" value="userName" name="type" id="type"/>
                     <input type="hidden" value="1" name="page" id="page"/>
-                    <a href="javascript:searchClientByCondition();" class="button border-main icon-search">搜索</a></li>
-                <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">共有数据：<strong>${totalCount}</strong> 条</span></li>
+                    <a href="javascript:searchSignByCondition();" class="button border-main icon-search">搜索</a></li>
+                <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">签到人数：<strong>${signNumber}/</strong><strong>${totalCount}</strong></span></li>
             </ul>
         </form>
     </div>
@@ -61,24 +58,14 @@
             <th width="200px">宾客姓名</th>
             <th width="200px">宾客电话</th>
             <th width="150px">是否签到</th>
-            <th width="150px">负责贵宾手机号</th>
-            <th width="150px">接待司机姓名</th>
-            <th width="150px">接待司机电话</th>
-            <th width="150px">用户邮箱</th>
-            <th width="200px">所属运营商</th>
-            <th width="124px">操作</th>
+            <th width="150px">签到日期</th>
         </tr>
         <c:forEach var="list" items="${cblist}">
-            <tr id="client_tr_${list.id}">
-                <td width="200px">${list.name}</td>
-                <td width="200px">${list.password}</td>
-                <td width="150px">${list.phone}</td>
-                <td width="150px">${list.phone}</td>
-                <td width="150px">${list.phone}</td>
-                <td width="150px">${list.email}</td>
-                <td width="200px">${list.operatorName}</td>
-                <td width="200px">${list.operatorName}</td>
-                <td width="124px"><input type="button" id="editButton" onclick="javascript:window.location.href='updateClientBefore.do?clientId=${list.id}'" value="修改">&nbsp;<input type="button" id="deleteButton" onclick="javascript:deleteClient(${list.id})" value="删除"></td>
+            <tr id="client_tr_${list.userNumber}">
+                <td width="200px">${list.userName}</td>
+                <td width="200px">${list.userNumber}</td>
+                <td width="150px">${list.status == false ? "未签到":"已签到"}</td>
+                <td width="150px">${list.signintime==null ? "无" : list.signintime}</td>
             </tr>
         </c:forEach>
 
@@ -105,5 +92,37 @@
         </tr>
     </table>
 </div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/pintuer.js"></script>
+<script type="text/javascript" src="js/showBo.js"></script>
+<script type="text/javascript">
+    function setSearchType() {
+        var types = document.getElementById("selectSearchType");
+        for ( var i = 0; i < types.length; i++) {
+            if (types[i].selected == true) {
+                document.getElementById("type").value = types[i].value;
+                break;
+            }
+        }
+    }
+
+    function searchSignByCondition(){
+        if(document.getElementById("type").value==''){
+            Showbo.Msg.alert("请选择查询项!",function (){
+                document.getElementById("selectSearchType").focus();
+            });
+            return 0;
+        }
+        if(document.getElementById("keyword").value==''){
+            alert("请输入查询参数!");
+
+            document.getElementById("keyword").focus();
+
+            return 0;
+        }
+        document.searchSignByConditionForm.submit();
+    }
+</script>
+
 </body>
 </html>

@@ -24,20 +24,21 @@ public class LoginCheckFilter implements Filter {
 		System.out.println("==============================================Ibeacon loading filter==============================================");
 	}
 
+
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest r =(HttpServletRequest)request;
 		HttpSession session = r.getSession();
 		String requestUri = r.getRequestURI();
-		if(requestUri.endsWith("adminLogin.jsp") || requestUri.endsWith("login.do"))
+		if(requestUri.endsWith("login.jsp") || requestUri.endsWith("adminlogin.do"))
 		{
 			chain.doFilter(request,response);
 			return;
-		}else if(session.getAttribute("RoleBean")!=null){
+		}else if(session.getAttribute("admin")!=null){
 			chain.doFilter(request,response);
 			return;
 		}else{
-			((HttpServletResponse)response).sendRedirect("adminLogin.jsp");
+			((HttpServletResponse)response).sendRedirect("login.jsp");
 			return;
 		}
 

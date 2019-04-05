@@ -11,9 +11,9 @@
 <%
     String path = request.getContextPath();
     //获取当前角色的权限信息
-    RoleBean rb = null;
-    if ((RoleBean) session.getAttribute("RoleBean") != null) {
-        rb = (RoleBean) session.getAttribute("RoleBean");
+    AdminBean rb = null;
+    if ((AdminBean) session.getAttribute("admin") != null) {
+        rb = (AdminBean) session.getAttribute("admin");
     }
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -56,7 +56,7 @@
                             onchange="setSearchType();">
 
                     <option value="userName">宾客姓名</option>
-                    <option value="userWorkplace">宾客单位</option>
+                    <option value="workPlace">宾客单位</option>
                     <option value="arrivalStation">抵达站</option>
 
 
@@ -64,9 +64,7 @@
                 </li>
 
                 <li><input type="text" placeholder="请输入搜索关键字" name="keyword" id="keyword" class="input" style="width:250px; line-height:17px;display:inline-block" />
-                    <input type="hidden" value="deviceName" name="type" id="type"/>
-                    <input type="hidden" value="<%=rb.getUserId()%>" name="userId" id="userId"/>
-                    <input type="hidden" value="<%=rb.getRoleName()%>" name="roleName" id="roleName"/>
+                    <input type="hidden" value="userName" name="type" id="type"/>
                     <input type="hidden" value="1" name="page" id="page"/>
                     <a href="javascript:searchUserByCondition();"
                        class="button border-main icon-search">搜索</a></li>
@@ -77,45 +75,47 @@
     <table class="table table-hover text-center">
         <tr>
             <th width="100px">姓名</th>
-            <th width="100px">手机号码</th>
-            <th width="80px">角色</th>
-            <th width="200px">随行人员手机</th>
-            <th width="120px">所在单位</th>
-            <th width="120px">职务</th>
-            <th width="160px">职称</th>
-            <th width="150px">邮箱</th>
-            <th width="140px">抵达日期</th>
-            <th width="80px">抵达车次</th>
-            <th width="80px">抵达车站</th>
-            <th width="174px">返程日期</th>
-            <th width="120px">返程车站</th>
-            <th width="120px">酒店编号</th>
-            <th width="160px">房型</th>
-            <th width="150px">备注</th>
+            <th width="150px">手机号码</th>
+            <th width="200px">角色</th>
+            <th width="150px">人员类别</th>
+            <th width="300px">所在单位</th>
+            <th width="200px">抵达日期</th>
+            <th width="200px">抵达时间</th>
+            <th width="200px">抵达车次</th>
+            <th width="200px">抵达车站</th>
+            <th width="200px">返程日期</th>
+            <th width="200px">返程时间</th>
+            <th width="200px">返程车次</th>
+            <th width="200px">返程车站</th>
+            <th width="200px">酒店名称</th>
+            <th width="200px">房型</th>
+            <th width="300px">备注</th>
             <th width="150px">操作</th>
         </tr>
         <c:forEach var="list" items="${dblist}">
-            <tr id="device_tr_${list.deviceId}">
-                <td width="100px" title="${list.deviceName}">${list.deviceName}</td>
-                <td width="100px">${list.major}</td>
-                <td width="80px">${list.minor}</td>
-                <td width="174px" title="${list.deviceInfo}">${list.deviceInfo}</td>
-                <td width="120px">${list.clientName}</td>
-                <td width="120px">${list.operatorName}</td>
-                <td width="160px">${list.updateTime}</td>
-                <td width="140px" title="${list.deviceName}">${list.deviceName}</td>
-                <td width="80px">${list.updateTime}</td>
-                <td width="80px">${list.minor}</td>
-                <td width="174px" title="${list.deviceInfo}">${list.deviceInfo}</td>
-                <td width="120px">${list.updateTime}</td>
-                <td width="120px">${list.operatorName}</td>
-                <td width="160px">${list.updateTime}</td>
-                <th width="150px"></td>
-                <th width="150px">备注</th>
-                <td width="150px"><input type="button" id="editButton"
+            <tr id="${list.userNumber}">
+                <td width="100px" title="${list.userName}">${list.userName}</td>
+                <td width="150px">${list.userNumber}</td>
+                <td width="200px">${list.userRole ==  0 ? "列席代表" : (list.userRole == 1 ? "正式参会代表" : "随行人员")}</td>
+                <td width="150px" title="${list.userSorts}">${list.userSorts}</td>
+                <td width="300px">${list.workPlace}</td>
+                <td width="200px">${list.arrivalDate}</td>
+                <td width="200px">${list.arrivalTime}</td>
+                <td width="200px">${list.arrivalNumber}</td>
+                <td width="200px" title="${list.arrivalStation}">${list.arrivalStation}</td>
+                <td width="200px">${list.returnDate}</td>
+                <td width="200px">${list.returnTime}</td>
+                <td width="200px">${list.returnNumber}</td>
+                <td width="200px">${list.returnStation}</td>
+                <td width="200px">${list.hname}</td>
+                <td width="200px">${list.htype}</td>
+                <td width="300px">${list.remark}</td>
+                <td width="150px">
+                    &nbsp;<input type="button" id="editButton" onclick="javascript:window.location.href='viewUser.do?userNumber=${list.userNumber}'" value="更多">&nbsp;
                     <input type="button" id="deleteButton"
-                           onclick="deleteUser(${list.deviceId},'${list.imageUrl}','${list.videoUrl}')"
-                           value="删除"></td>
+                           onclick="deleteUser(${list.userNumber})"
+                           value="删除">
+                </td>
             </tr>
         </c:forEach>
 
@@ -156,14 +156,13 @@
             }
         }
     }
-    function deleteUser(deviceId,imageUrl,videoUrl){
+    function deleteUser(userNumber){
         Showbo.Msg.confirm("确定要删除该人员吗?",function(flag){
             if(flag=='yes'){
-                $.post("deleteUser.do",{deviceId:deviceId,imageUrl:imageUrl,videoUrl:videoUrl},
+                $.post("deleteUser.do",{userNumber:userNumber},
                     function(data){
                         if(data==1){
                             Showbo.Msg.alert("删除成功!",function (){window.location.reload();});
-                            //document.getElementById("device_tr_"+deviceId).style.display="none";
                         }else{
                             Showbo.Msg.alert("删除失败!");
                         }
@@ -179,9 +178,10 @@
             return 0;
         }
         if(document.getElementById("keyword").value==''){
-            //alert("请输入查询参数!");
-            window.location.href='viewUserInfo.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>';
-            //document.getElementById("keyword").focus();
+            alert("请输入查询参数!");
+
+            document.getElementById("keyword").focus();
+
             return 0;
         }
         document.searchUserByConditionForm.submit();

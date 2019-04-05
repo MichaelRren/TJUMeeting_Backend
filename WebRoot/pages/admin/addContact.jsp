@@ -11,9 +11,9 @@
 <%
     String path = request.getContextPath();
     //获取当前角色的权限信息
-    RoleBean rb = null;
-    if ((RoleBean) session.getAttribute("RoleBean") != null) {
-        rb = (RoleBean) session.getAttribute("RoleBean");
+    AdminBean rb = null;
+    if ((AdminBean) session.getAttribute("admin") != null) {
+        rb = (AdminBean) session.getAttribute("admin");
     }
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -43,70 +43,39 @@
 <body>
 <div class="page-container">
     <div class="row cl" style="margin-top: -20px;margin-left: -220px;">
-        <label class="bread"><a href="viewContact.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>" style="text-decoration: none;"><<返回</a></label>
+        <label class="bread"><a href="viewContact.do?page=1" style="text-decoration: none;"><<返回</a></label>
     </div>
     <form action="" method="post" class="form form-horizontal" id="form-article-add">
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>联络员姓名：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="" maxlength='20' placeholder="请输入联络员姓名(必填)" id="contactName" name="contactName">
-                <span id="name_notice" class="c-red"></span>
+                <input type="text" class="input w50" value="" maxlength='20' placeholder="请输入联络员姓名(必填)" id="lname" name="lname">
+                <span id="l_name" class="c-red"></span>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>联络人员手机号码：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="" maxlength='20' placeholder="请输入联络员手机号码(必填)" id="contactPhone" name="contactPhone">
-                <span id="contact_Phone" class="c-red"></span>
+                <input type="text" class="input w50" value="" maxlength='11' minlength="11" placeholder="请输入联络员手机号码(必填)" id="lnumber" name="lnumber">
+                <span id="l_number" class="c-red"></span>
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>负责的宾客姓名：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="" maxlength='20' placeholder="请输入负责的宾客姓名(必填)" id="contactForUser" name="contactForUser">
-                <span id="contact_for_user" class="c-red"></span>
+                <input type="text" class="input w50" value="" readonly="readonly" maxlength='20' id="userName" name="userName">
+                <span id="user_name" class="c-red"></span>
             </div>
         </div>
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>负责的宾客手机号码：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="" maxlength='20' placeholder="请输入负责的宾客手机号码(必填)" id="contactForUserPhone" name="contactForUserPhone">
-                <span id="contact_for_user_phone" class="c-red"></span>
+                <input type="text" class="input w50" onblur="ajaxRequest()" maxlength='20' placeholder="请输入负责的宾客手机号码(必填)" id="userNumber" name="userNumber">
+                <span id="user_number" class="c-red"></span>
             </div>
         </div>
 
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>接待司机姓名：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="" maxlength='20' placeholder="请接待的司机姓名(必填)" id="contactForDriverName" name="contactForUser">
-                <span id="contact_for_driver" class="c-red"></span>
-            </div>
-        </div>
-
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>接待的司机手机号码：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="" maxlength='20' placeholder="请输入接待的司机的手机号码(必填)" id="contactForUserPhone" name="contactForUserPhone">
-                <span id="contact_for_driver_phone" class="c-red"></span>
-            </div>
-        </div>
-
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属运营商：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <select name="selectOperator" id="selectOperator" class="input w50" onChange="setType()">
-                    <option value="">请选择所属运营商</option>
-                    <c:forEach var="list" items="${operatorList}" varStatus="status">
-                        <option value="${list.id}">${list.name}</option>
-                    </c:forEach>
-                </select>
-                <span id="belong_notice" class="c-red"></span>
-            </div>
-        </div>
-
-        <input type="hidden" value="3" id="roleId" name="roleId">
-        <input type="hidden" value="" id="operatorId" name="operatorId">
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
                 <button onClick="addContact();" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i>确认添加</button>
@@ -123,89 +92,106 @@
 <script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript" src="js/showBo.js"></script>
 <script type="text/javascript">
-    function setType() {
-        var operatorIds = document.getElementById("selectOperator");
-        for ( var i = 0; i < operatorIds.length; i++) {
-            if (operatorIds[i].selected == true) {
-                document.getElementById("operatorId").value = operatorIds[i].value;
-                break;
-            }
-        }
-    }
+
     function addContact(){
-        var operatorId = document.getElementById("operatorId").value;
-        var clientName = document.getElementById("contactName").value;
-        var clientPassword = document.getElementById("contactPhone").value;
-        var clientPassword_confirm = document.getElementById("clientPassword_confirm").value;
-        var clientPhone = document.getElementById("clientPhone").value;
-        var clientEmail = document.getElementById("clientEmail").value;
-        var roleId = document.getElementById("roleId").value;
-        if(clientName==""){
-            document.getElementById("name_notice").innerHTML="*请填写用户名称!";
-            document.getElementById("clientName").focus();
-            return 0;
-        }
-        document.getElementById("name_notice").innerHTML="";
-        if(clientPassword==""){
-            document.getElementById("password_notice").innerHTML="*请填写用户密码!";
-            document.getElementById("clientPassword").focus();
-            return 0;
-        }
-        document.getElementById("password_notice").innerHTML="";
-        if(clientPassword_confirm==""){
-            document.getElementById("password_confirm_notice").innerHTML="*请输入确认密码!";
-            document.getElementById("clientPassword_confirm").focus();
-            return 0;
-        }else if(clientPassword_confirm!=clientPassword){
-            document.getElementById("password_confirm_notice").innerHTML="*两次输入的密码不一致!";
-            document.getElementById("clientPassword_confirm").focus();
-            return 0;
-        }
-        document.getElementById("password_confirm_notice").innerHTML="";
-        if(operatorId==""){
-            document.getElementById("belong_notice").innerHTML="*请选择用户所属运营商!";
-            document.getElementById("selectOperator").focus();
-            return 0;
-        }
-        document.getElementById("belong_notice").innerHTML="";
-        var rep=/^(((0\d{2,3})-)(\d{7,8})(-(\d{3,}))?)|(1(3|5|7|8)\d{9})$/;
-        if(clientPhone==""){
+        var lname = document.getElementById("lname").value;
+        var lnumber = document.getElementById("lnumber").value;
+        var userName = document.getElementById("userName").value;
+        var userNumber = document.getElementById("userNumber").value;
 
-        }else if(!rep.test(clientPhone)){
-            document.getElementById("phone_notice").innerHTML="*请正确填写电话!";
-            document.getElementById("clientPhone").focus();
+        if(lname==""){
+            document.getElementById("l_name").innerHTML="*请填写联络员姓名!";
+            document.getElementById("lname").focus();
             return 0;
         }
-        document.getElementById("phone_notice").innerHTML="";
-        var rep2=/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-        if(clientEmail==""){
+        document.getElementById("l_name").innerHTML="";
 
-        }else if(!rep2.test(clientEmail)){
-            document.getElementById("email_notice").innerHTML="*请正确填写邮箱!";
-            document.getElementById("clientEmail").focus();
+        if(lnumber==""){
+            document.getElementById("l_number").innerHTML="*请填写联络员手机号码!";
+            document.getElementById("lnumber").focus();
+            return 0;
+        } else if(isNaN(lnumber))
+        {
+            document.getElementById("l_number").innerHTML="*手机号码只能输入数字!"
+            document.getElementById("lnumber").focus();
+            return 0;
+        }else if(lnumber.length != 11)
+        {
+            document.getElementById("l_number").innerHTML="*手机号码为十一位数字!";
+            document.getElementById("lnumber").focus();
+
             return 0;
         }
-        document.getElementById("email_notice").innerHTML="";
+        document.getElementById("l_number").innerHTML="";
+
+        // if(userName==""){
+        //     document.getElementById("user_name").innerHTML="*请输入接待的宾客姓名!";
+        //     document.getElementById("userName").focus();
+        //     return 0;
+        // }
+        // document.getElementById("user_name").innerHTML="";
+
+        if(userNumber==""){
+            document.getElementById("user_number").innerHTML="*请输入接待的宾客的手机号码!";
+            document.getElementById("userNumber").focus();
+            return 0;
+        }else if(isNaN(userNumber))
+        {
+            document.getElementById("user_number").innerHTML="*手机号码只能输入数字!"
+            document.getElementById("userNumber").focus();
+            return 0;
+        }else if(userNumber.length != 11)
+        {
+            document.getElementById("user_number").innerHTML="*手机号码为十一位数字!"
+            document.getElementById("userNumber").focus();
+            return 0;
+        }
+
+        document.getElementById("user_number").innerHTML="";
+
         $.post("addContact.do", {
-                operatorId : operatorId,
-                clientName : clientName,
-                clientPassword : clientPassword,
-                clientPhone : clientPhone,
-                clientEmail : clientEmail,
-                roleId : roleId
+                lname : lname,
+                lnumber : lnumber,
+                userName : userName,
+                userNumber : userNumber
             },
             function(data) {
                 if (data == 1) {
-                    Showbo.Msg.alert("联络人员添加成功!",function(){window.location='searchClient.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>';});
+                    Showbo.Msg.alert("联络人员添加成功!",function(){window.location='viewContact.do?page=1';});
 
-                } else if (data == -1) {
-                    document.getElementById("name_notice").innerHTML = "*用户名称已存在,请重新填写!";
-                    document.getElementById("clientName").focus();
-                } else {
+                }
+                else {
                     Showbo.Msg.alert("联络人员添加失败!");
                 }
             });
     }
+
+    // function ajaxRequest() {
+    //     var userNumber = document.getElementById("userNumber").value;
+    //
+    //     alert(userNumber);
+    //
+    //     // if (userNumber.length == 11)
+    //     // {
+    //     //     $.ajax({
+    //     //         type: "post",   //
+    //     //         url: "ajaxRequest.do",
+    //     //         data: {"userNumber": userNumber},
+    //     //         dataType: "json",
+    //     //         success: function (data) {
+    //     //             alert("123");
+    //     //             // var userName = data.d;
+    //     //             //
+    //     //             // document.getElementById("user_name").innerHTML=userName;
+    //     //         },
+    //     //         error: function () {
+    //     //             alert("error")
+    //     //         }
+    //     //     })
+    //     // }
+    // }
+
+
 
 </script>
 </body>

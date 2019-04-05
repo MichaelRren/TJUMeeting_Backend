@@ -34,7 +34,7 @@
                     <div class="form-group">
                         <div class="field field-icon-right">
                             <input type="password" class="input input-big"  maxlength='20' id='password' name='password' value="${password}" placeholder="登录密码" />
-                             <input type="hidden" name="roleName" id="roleName" value="adminer">
+                             <input type="hidden" name="roleName" id="roleName" value="admin">
                             <span class="icon icon-key margin-small"></span>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
         
       <li style="float:left;"><span style="float:left;">用户类型:</span></li>
         <li style="float:right;"><select  name="selectUserType" class="input" style="width:230px; line-height:17px;" id="selectUserType" onChange="setType()">
-			  <option value="adminer">超级管理员</option>
+			  <option value="admin">超级管理员</option>
             </select>
 		</li>
 		  

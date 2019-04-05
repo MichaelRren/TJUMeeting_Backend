@@ -7,14 +7,17 @@
 --%>
 <%@ page language="java" contentType="text/html"
          import="java.util.*,com.ictwsn.bean.*" pageEncoding="UTF-8"%>
+<%@ page import="com.ictwsn.service.admin.AdminService" %>
+<%@ page import="javax.annotation.Resource" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
     String path = request.getContextPath();
     //获取当前角色的权限信息
-    RoleBean rb = null;
-    if ((RoleBean) session.getAttribute("RoleBean") != null) {
-        rb = (RoleBean) session.getAttribute("RoleBean");
+    AdminBean rb = null;
+    if ((AdminBean) session.getAttribute("admin") != null) {
+        rb = (AdminBean) session.getAttribute("admin");
     }
+
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh-cn">
@@ -42,16 +45,14 @@
                 <li>
                     <select name="selectSearchType" id="selectSearchType" class="input" style="width:200px; line-height:17px;" onchange="setSearchType();">
 
-                        <option value=contactName>联络人员姓名</option>
-                        <option value="contactPhone">联络人员手机号码</option>
+                        <option value="Lname">联络人员姓名</option>
+                        <option value="UserName">宾客姓名</option>
 
                     </select>
                 </li>
 
                 <li><input type="text" placeholder="请输入搜索关键字" name="keyword" id="keyword" class="input" style="width:250px; line-height:17px;display:inline-block" />
-                    <input type="hidden" value="clientName" name="type" id="type"/>
-                    <input type="hidden" value="<%=rb.getUserId()%>" name="userId" id="userId"/>
-                    <input type="hidden" value="<%=rb.getRoleName()%>" name="roleName" id="roleName"/>
+                    <input type="hidden" value="Lname" name="type" id="type"/>
                     <input type="hidden" value="1" name="page" id="page"/>
                     <a href="javascript:searchContactByCondition();" class="button border-main icon-search">搜索</a></li>
                 <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">共有数据：<strong>${totalCount}</strong> 条</span></li>
@@ -64,21 +65,18 @@
             <th width="200px">联络人员电话</th>
             <th width="150px">负责的宾客姓名</th>
             <th width="150px">负责贵宾手机号</th>
-            <th width="150px">接待司机姓名</th>
-            <th width="150px">接待司机电话</th>
-            <th width="200px">所属运营商</th>
             <th width="124px">操作</th>
         </tr>
         <c:forEach var="list" items="${cblist}">
-            <tr id="client_tr_${list.id}">
-                <td width="200px">${list.name}</td>
-                <td width="200px">${list.password}</td>
-                <td width="150px">${list.phone}</td>
-                <td width="150px">${list.phone}</td>
-                <td width="150px">${list.phone}</td>
-                <td width="200px">${list.operatorName}</td>
-                <td width="200px">${list.operatorName}</td>
-                <td width="124px"><input type="button" id="editButton" onclick="javascript:window.location.href='beforeUpdateContact.do?clientId=${list.id}'" value="修改">&nbsp;<input type="button" id="deleteButton" onclick="javascript:deleteContact(${list.id})" value="删除"></td>
+            <tr id="client_tr_${list.lnumber}">
+                <td width="200px">${list.lname}</td>
+                <td width="200px">${list.lnumber}</td>
+                <td width="150px">${list.userName}</td>
+                <td width="150px">${list.userNumber}</td>
+                <td width="124px">
+                    <input type="button" id="editButton" onclick="javascript:window.location.href='beforeUpdateContact.do?lnumber=${list.lnumber}'" value="修改">&nbsp;
+                    <input type="button" id="deleteButton" onclick="javascript:deleteContact(${list.lnumber})" value="删除">
+                </td>
             </tr>
         </c:forEach>
 
@@ -116,10 +114,10 @@
             }
         }
     }
-    function deleteContact(clientId){
+    function deleteContact(lnumber){
         Showbo.Msg.confirm("确定要删除该联络人员吗?",function(flag){
             if(flag=='yes'){
-                $.post("deleteContact.do",{clientId:clientId},
+                $.post("deleteContact.do",{lnumber:lnumber},
                     function(data){
                         if(data==1){
                             Showbo.Msg.alert("联络员删除成功!",function(){window.location.reload();});
@@ -138,9 +136,9 @@
             return 0;
         }
         if(document.getElementById("keyword").value==''){
-            //alert("请输入查询参数!");
-            window.location.href='viewContact.do?userId=<%=rb.getUserId()%>&page=1&roleName=<%=rb.getRoleName()%>';
-            //document.getElementById("keyword").focus();
+            alert("请输入查询参数!");
+            //window.location.href='viewContact.do?page=1';
+            document.getElementById("keyword").focus();
             return 0;
         }
         document.searchContactByConditionForm.submit();
