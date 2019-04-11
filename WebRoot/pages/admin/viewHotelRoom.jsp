@@ -49,14 +49,15 @@
 <div class="panel admin-panel">
     <div class="panel-head"><strong class="icon-reorder"> 酒店房间列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
     <div class="padding border-bottom">
-        <form method="post" action="searchHotelRoomByCondition.do"
+        <form method="get" action="searchHotelRoomByCondition.do"
               id="searchHotelRoomByConditionForm" name="searchHotelRoomByConditionForm">
             <ul class="search" style="padding-left:10px;">
                 <li> <a class="button border-main icon-plus-square-o" href="beforeAddHotelRoom.do"> 添加酒店房间</a> </li>
                 <li>
                     <select name="selectSearchType" id="selectSearchType" class="input" style="width:200px; line-height:17px;" onchange="setSearchType();">
 
-                        <option value="hname">酒店房间名称</option>
+                        <option value="hname">酒店名称</option>
+                        <option value="htype">房间类型</option>
 
                     </select>
                 </li>
@@ -140,7 +141,7 @@
         });
 
     }
-    function searchHotelByCondition(){
+    function searchHotelRoomByCondition(){
         if(document.getElementById("type").value==''){
             Showbo.Msg.alert("请选择查询项!",function(){document.getElementById("selectSearchType").focus();});
             return 0;

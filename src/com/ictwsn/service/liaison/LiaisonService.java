@@ -17,4 +17,5 @@ public interface LiaisonService {
 	public LiaisonBean searchLiaisonByLnumber(String lnumber);
 	public LiaisonBean searchLiaisonByUserNumber(String userNumber);
 	public List<LiaisonBean> searchLiaisonByCondition(String type, String keyword, int number, int size);
+	public List<LiaisonBean> searchLiaisonByCondition(String type, String keyword);
 }

@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: R
-  Date: 2019/3/19
-  Time: 21:16
+  Date: 2019/3/21
+  Time: 11:15
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html"
@@ -16,61 +16,100 @@
         rb = (AdminBean) session.getAttribute("admin");
     }
 %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh-cn">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/showBo.css"/>
     <link rel="stylesheet" type="text/css" href="css/pintuer.css">
     <link rel="stylesheet" type="text/css" href="css/admin.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/pintuer.js"></script>
+
 </head>
 <body>
+
 <div class="panel admin-panel">
-    <div class="panel-head"><strong class="icon-reorder"> 宾客签到列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <div class="panel-head">
+        <strong class="icon-reorder"> 宾馆房间分配</strong> <a href=""
+                                                         style="float:right; display:none;">添加字段</a>
+    </div>
     <div class="padding border-bottom">
-        <form method="get" action="searchSignByCondition.do"
-              id="searchSignByConditionForm" name="searchSignByConditionForm">
+        <form method="get" action="searchByCondition.do"
+              id="searchByConditionForm" name="searchByConditionForm">
             <ul class="search" style="padding-left:10px;">
-                <li> <a class="button border-main icon-plus-square-o" href="#"> 签到情况查询</a> </li>
                 <li>
-                    <select name="selectSearchType" id="selectSearchType" class="input" style="width:200px; line-height:17px;" onchange="setSearchType();">
-                        <option value="userName">宾客姓名</option>
-                    </select>
+                    <a class="button border-main icon-plus-square-o"
+                       href="#"> 房间信息查询</a>
+                </li>
+
+
+                <li><select name="selectSearchType" class="input"
+                            id="selectSearchType" style="width:200px; line-height:17px;"
+                            onchange="setSearchType();">
+
+                    <option value="userName">宾客姓名</option>
+                    <option value="hname">酒店名称</option>
+                    <option value="htype">房型</option>
+
+
+                </select>
                 </li>
 
                 <li><input type="text" placeholder="请输入搜索关键字" name="keyword" id="keyword" class="input" style="width:250px; line-height:17px;display:inline-block" />
                     <input type="hidden" value="userName" name="type" id="type"/>
                     <input type="hidden" value="1" name="page" id="page"/>
-                    <a href="javascript:searchSignByCondition();" class="button border-main icon-search">搜索</a></li>
-                <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">签到人数：<strong>${signNumber}/</strong><strong>${totalCount}</strong></span></li>
+                    <a href="javascript:searchByCondition();"
+                       class="button border-main icon-search">搜索</a></li>
+                <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">共有数据：<strong>${totalCount}</strong>条</span></li>
             </ul>
         </form>
     </div>
     <table class="table table-hover text-center">
         <tr>
-            <th width="200px">宾客姓名</th>
-            <th width="200px">宾客电话</th>
-            <th width="150px">是否签到</th>
-            <th width="150px">签到日期</th>
+            <th width="100px">姓名</th>
+            <th width="150px">手机号码</th>
+            <th width="150px">人员类别</th>
+            <th width="300px">所在单位</th>
+            <th width="200px">抵达日期</th>
+            <th width="200px">抵达时间</th>
+            <th width="200px">返程日期</th>
+            <th width="200px">返程时间</th>
+            <th width="200px">酒店名称</th>
+            <th width="200px">房型</th>
+            <th width="300px">备注</th>
+            <th width="150px">操作</th>
         </tr>
-        <c:forEach var="list" items="${cblist}">
-            <tr id="client_tr_${list.userNumber}">
-                <td width="200px">${list.userName}</td>
-                <td width="200px">${list.userNumber}</td>
-                <td width="150px">${list.status == false ? "未签到":"已签到"}</td>
-                <td width="150px">${list.signintime==null ? "无" : list.signintime}</td>
+        <c:forEach var="list" items="${userList}">
+            <tr id="${list.userNumber}">
+                <td width="100px" title="${list.userName}">${list.userName}</td>
+                <td width="150px">${list.userNumber}</td>
+                <td width="150px" title="${list.userSorts}">${list.userSorts}</td>
+                <td width="300px">${list.workPlace}</td>
+                <td width="200px">${list.arrivalDate}</td>
+                <td width="200px">${list.arrivalTime}</td>
+                <td width="200px">${list.returnDate}</td>
+                <td width="200px">${list.returnTime}</td>
+                <td width="200px">${list.hname}</td>
+                <td width="200px">${list.htype}</td>
+                <td width="300px">${list.remark}</td>
+                <td width="150px">
+                    <c:if test="${list.hname.length() == 0}">
+                        <input type="button" id="editButton" onclick="javascript:window.location.href='beforeInsertRoom.do?userNumber=${list.userNumber}'" value="分配房间">&nbsp;
+                    </c:if>
+                    <c:if test="${list.hname.length() != 0}">
+                        <input type="button" id="deleteButton" onclick="javascript:window.location.href='beforeChangeRoom.do?userNumber=${list.userNumber}'" value="更换房间">
+                    </c:if>
+
+                </td>
             </tr>
         </c:forEach>
 
         <tr>
-            <td colspan="8"><div class="pagelist">
+            <td colspan="20"><div class="pagelist">
                 <c:choose>
                     <c:when test="${page==1}">
                         <a>上一页</a>
@@ -88,6 +127,7 @@
                         <a href="${nextPageHref}">下一页</a>
                     </c:otherwise>
                 </c:choose>
+
             </div></td>
         </tr>
     </table>
@@ -106,7 +146,7 @@
         }
     }
 
-    function searchSignByCondition(){
+    function searchByCondition(){
         if(document.getElementById("type").value==''){
             Showbo.Msg.alert("请选择查询项!",function (){
                 document.getElementById("selectSearchType").focus();
@@ -120,9 +160,10 @@
 
             return 0;
         }
-        document.searchSignByConditionForm.submit();
+        document.searchByConditionForm.submit();
     }
 </script>
-
 </body>
 </html>
+
+

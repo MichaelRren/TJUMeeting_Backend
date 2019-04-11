@@ -45,26 +45,29 @@
         <label class="bread"><a href="viewHotelRoom.do?page=1" style="text-decoration: none;"><<返回</a></label>
     </div>
     <form action="" method="post" class="form form-horizontal" id="form-article-add">
+        <div>
+            <input type="hidden" value="${hb.hid}" id="hid" name="hid">
+        </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>酒店名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <%--<input type="text" class="input w50" value="" maxlength="50" placeholder="请选择酒店名称(必填)" id="hname" name="hname">--%>
                 <%--<span id="h_name" class="c-red"></span>--%>
-                <select name="hname" id="hname" class="input" style="width:200px; line-height:17px;">
+                <select name="selectHotel" id="selectHotel" class="input" style="width:200px; line-height:17px;">
                     <c:forEach var="list" items="${ubl}">
-                        <option value="${list.hname}" <c:if test="${ubl.hname.equals(list.hname)}"><c:out value="selected"/></c:if>>${list.hname}</option>
+                        <option value="${list.hname}" <c:if test="${hb.hname.equals(list.hname)}"><c:out value="selected" /></c:if>>${list.hname}</option>
                     </c:forEach>
                 </select>
+
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>房间类型：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="${hb.htype}" maxlength='100' placeholder="请输入房间类型(必填)" id="htype" name="htype">
+                <input type="text" class="input w50" value="${hb.htype}" maxlength="11" placeholder="请输入房间类型(必填)" id="htype" name="htype">
                 <span id="h_type" class="c-red"></span>
             </div>
         </div>
-
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>房间价格：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -79,10 +82,6 @@
                 <span id="h_number" class="c-red"></span>
             </div>
         </div>
-
-        //根据id进行更新
-        <div><input type="hidden" value="${hb.hid}" name="hid" id="hid"/></div>
-
 
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
@@ -102,10 +101,28 @@
 <script type="text/javascript">
 
     function updateHotelRoom() {
-        var hname = document.getElementById("hname").value;
+        // var hnames = document.getElementById("hname").value;
         var htype = document.getElementById("htype").value;
         var hprice = document.getElementById("hprice").value;
         var hnumber = document.getElementById("hnumber").value;
+        var hid = document.getElementById("hid").value;
+
+        var hnames = document.getElementById("selectHotel");
+        var hname;
+        for ( var i = 0; i < hnames.length; i++) {
+            if (hnames[i].selected == true) {
+                hname = hnames[i].value;
+                break;
+            }
+        }
+
+        // var hname;
+        // for ( var i = 0; i < hnames.length; i++) {
+        //     if (hnames[i].selected == true) {
+        //         hname = hnames[i].value;
+        //         break;
+        //     }
+        // }
 
         if(htype==""){
             document.getElementById("h_type").innerHTML="*请填写酒店房间类型!";
@@ -120,7 +137,7 @@
             return 0;
         }else if(isNaN(hprice))
         {
-            document.getElementById("h_price").innerHTML="*房间价格必须是数字!"
+            document.getElementById("h_price").innerHTML="*房间价格必须是数字!";
         }
         document.getElementById("hprice").innerHTML="";
 
@@ -130,11 +147,11 @@
             return 0;
         }else if(isNaN(hnumber))
         {
-            document.getElementById("h_number").innerHTML="*房间数量必须是数字!"
+            document.getElementById("h_number").innerHTML="*房间数量必须是数字!";
         }
         document.getElementById("hnumber").innerHTML="";
 
-        $.post("updateHotelRoom.do",{hid:hid,hname:hname,htype:htype,hprice:hprice,hnumber:hnumber},
+        $.post("updateHotelRoom.do",{hid:hid, hname:hname, htype:htype,hprice : hprice,hnumber:hnumber},
             function(data){
                 if(data==1){
                     Showbo.Msg.alert("房间信息修改成功!",function(){window.location='viewHotelRoom.do?page=1';});

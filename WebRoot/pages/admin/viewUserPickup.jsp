@@ -11,9 +11,9 @@
 <%
     String path = request.getContextPath();
     //获取当前角色的权限信息
-    RoleBean rb = null;
-    if ((RoleBean) session.getAttribute("RoleBean") != null) {
-        rb = (RoleBean) session.getAttribute("RoleBean");
+    AdminBean rb = null;
+    if ((AdminBean) session.getAttribute("admin") != null) {
+        rb = (AdminBean) session.getAttribute("admin");
     }
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -40,7 +40,7 @@
     <div class="padding border-bottom">
 
         <a class="button border-main icon-plus-square-o"
-           href="#"> 导出Excel</a>
+           href="outputToUserPickupExcel.do"> 导出Excel</a>
 
         <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">共有数据：<strong>${totalCount}</strong>条</span></li>
 

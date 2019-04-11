@@ -30,21 +30,24 @@
 <div class="leftnav">
   <div class="leftnav-title"><strong><span class="icon-list"></span>管理列表</strong></div>
   <ul style="display:block">
-      <li id="item_1"><a href="viewUserInfo.do?page=1" target="right"><span class="icon-caret-right"></span>宾客信息管理</a></li>
-      <li id="item_2"><a href="viewContact.do?page=1" target="right"><span class="icon-caret-right"></span>联络人员管理</a></li>
-      <li id="item_3"><a target="right"><span class="icon-caret-right"></span>司机管理</a></li>
-      <li id="item_4"><a href="viewDriver.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>司机信息管理</a></li>
-      <li id="item_5"><a href="dispatchDriver.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>VIP分配司机</a></li>
-      <li id="item_6"><a href="viewSign.do?page=1" target="right"><span class="icon-caret-right"></span>签到信息管理</a></li>
-      <li id="item_7"><a target="right"><span class="icon-caret-right"></span>接站组报表管理</a></li>
-      <li id="item_8"><a href="viewVIPPickUp.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>VIP宾客接站组</a></li>
-      <li id="item_9"><a href="viewUserPickUp.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>普通宾客接站组</a></li>
-      <li id="item_10"><a href="viewCheckin.do?page=1" target="right"><span class="icon-caret-right"></span>报到组报表管理</a></li>
-      <li id="item_11"><a href="viewNotification.do?page=1" target="right" id="notice"><span class="icon-caret-right"></span>通知</a> </li>
-      <li id="item_12"><a href="searchFile.do?page=1" target="right"><span class="icon-caret-right"></span>资料上传</a></li>
-      <li id="item_13"><a target="right"><span class="icon-caret-right"></span>酒店管理</a></li>
-      <li id="item_14"><a href="viewHotel.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>酒店信息管理</a></li>
-      <li id="item_15"><a href="viewHotelRoom.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>酒店房间管理</a></li>
+      <li id="item_1"><a target="right"><span class="icon-caret-right"></span>宾客信息管理</a></li>
+      <li id="item_2"><a href="viewUserArrivalInfo.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>抵达信息管理</a></li>
+      <li id="item_3"><a href="viewUserInfo.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>返程信息管理</a></li>
+      <li id="item_4"><a href="viewContact.do?page=1" target="right"><span class="icon-caret-right"></span>联络人员管理</a></li>
+      <li id="item_5"><a target="right"><span class="icon-caret-right"></span>司机管理</a></li>
+      <li id="item_6"><a href="viewDriver.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>司机信息管理</a></li>
+      <li id="item_7"><a href="dispatchDriver.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>VIP分配司机</a></li>
+      <li id="item_8"><a href="viewSign.do?page=1" target="right"><span class="icon-caret-right"></span>签到信息管理</a></li>
+      <li id="item_9"><a target="right"><span class="icon-caret-right"></span>接站组报表管理</a></li>
+      <li id="item_10"><a href="viewVIPPickUp.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>VIP宾客接站组</a></li>
+      <li id="item_11"><a href="viewUserPickUp.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>普通宾客接站组</a></li>
+      <li id="item_12"><a href="viewCheckin.do?page=1" target="right"><span class="icon-caret-right"></span>报到组报表管理</a></li>
+      <li id="item_13"><a href="viewNotification.do?page=1" target="right" id="notice"><span class="icon-caret-right"></span>通知</a> </li>
+      <li id="item_14"><a href="searchFile.do?page=1" target="right"><span class="icon-caret-right"></span>资料上传</a></li>
+      <li id="item_15"><a target="right"><span class="icon-caret-right"></span>酒店管理</a></li>
+      <li id="item_16"><a href="viewHotel.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>酒店信息管理</a></li>
+      <li id="item_17"><a href="viewHotelRoom.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>酒店房间管理</a></li>
+      <li id="item_18"><a href="viewDispatchRoom.do?page=1" target="right"><span class="icon-caret-right" style="text-indent:1em;"></span>房间分配管理</a></li>
   </ul>   
 </div>
 <script type="text/javascript">
@@ -75,12 +78,12 @@ function checkNotification() {
 }
 </script>
 <ul class="bread">
-  <li><a href="viewUserInfo.do?page=1" target="right" class="icon-home"> 首页</a></li>
+  <li><a href="viewUserArrivalInfo.do?page=1" target="right" class="icon-home"> 首页</a></li>
   <li><a id="a_leader_txt">管理中心</a></li>
   <li><b>当前用户：</b><span style="color:red;"><%=rb.getAdminName()%></span>
 </ul>
 <div class="admin">
-  <iframe scrolling="auto" rameborder="0" src="viewUserInfo.do?page=1" name="right" width="100%" height="100%"></iframe>
+  <iframe scrolling="auto" rameborder="0" src="viewUserArrivalInfo.do?page=1" name="right" width="100%" height="100%"></iframe>
 </div>
 </body>
 </html>

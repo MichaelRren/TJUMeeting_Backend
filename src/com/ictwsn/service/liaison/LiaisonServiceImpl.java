@@ -50,4 +50,6 @@ public class LiaisonServiceImpl implements LiaisonService{
 
 	public List<LiaisonBean> searchLiaisonByCondition(String type, String keyword, int number, int size)
 	{return dao.searchLiaisonByCondition(type, keyword, number, size);}
+
+	public List<LiaisonBean> searchLiaisonByCondition(String type, String keyword){return dao.searchLiaisonByCondition(type, keyword);}
 }

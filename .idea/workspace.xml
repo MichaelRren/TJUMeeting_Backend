@@ -9,200 +9,48 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java" description="return result;" line="30" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8fa3748-a8ec-42ce-aefe-946862e1a9c8" name="Default Changelist" comment="3rd Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f316d6ef-5c8e-499d-b30b-58339ae16b13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/lib/ueditor/1.4.3/jsp/jsp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addDriver.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addFile.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addHotel.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/notification.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/searchFile.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/updateDriver.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/updateHotel.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewDriver.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewHotel.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserPickup.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/ueditor/1.4.3/jsp/jsp1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/action/notification/NotificationAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/AdminBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/Driver4UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/DriverBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/FileBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/HotelBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/HotelRoomBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/LiaisonBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/LiaisonUserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/PickupUserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/PickupVIPBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/SignAndCheckinBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/SigninBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/UserChangeBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/UserDriverBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/UserSignBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/admin/AdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/admin/AdminDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/driver/DriverDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/driver/DriverDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/file/FileDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/file/FileDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/role/RoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/role/RoleDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/signin/SigninDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/signin/SigninDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/userchange/UserChangeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/userchange/UserChangeDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/userdriver/UserDriverDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/userdriver/UserDriverDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/admin/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/admin/AdminServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/driver/DriverService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/driver/DriverServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/file/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/file/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/role/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/role/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/signin/SigninService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/signin/SigninServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/userchange/UserChangeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/userchange/UserChangeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/userdriver/UserDriverService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ictwsn/service/userdriver/UserDriverServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a8fa3748-a8ec-42ce-aefe-946862e1a9c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/changeRoom.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/newInsertRoom.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchRoom.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrival.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrivalInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/adminLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/adminLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ibeacon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ibeacon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/addOperator.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/searchOperator.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/updateOperator.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewOperator.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserPickup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserPickup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebRoot/pages/adminManageCenter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/adminManageCenter.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/adminer/AdminerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/adminer/AdminerAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/client/ClientAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/client/ClientAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/login/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/login/LoginAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/operator/OperatorAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/operator/OperatorAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/AdminerBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/AdminerBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/ClientBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/ClientBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/DeviceBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/DeviceBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/OperatorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/OperatorBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/RoleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/RoleBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/bean/UserBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/adminer/AdminerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/adminer/AdminerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/adminer/AdminerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/adminer/AdminerDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/client/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/client/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/client/ClientDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/client/ClientDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/login/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/login/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/login/LoginDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/login/LoginDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/dao/operator/OperatorDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/adminer/AdminerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/adminer/AdminerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/adminer/AdminerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/adminer/AdminerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/client/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/client/ClientService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/client/ClientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/client/ClientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/login/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/login/LoginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/login/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/login/LoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/operator/OperatorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/operator/OperatorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/operator/OperatorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/service/operator/OperatorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/util/InsertData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/util/InsertData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/util/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/util/filter/LoginCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/pages/operator/updateClient.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/pages/operator/updateClient.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/adminer/AdminerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/adminer/AdminerAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/client/ClientAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/login/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/login/LoginAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/operator/OperatorAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/AdminerBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/ClientBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/DeviceBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/OperatorBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/RoleBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/RoleBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/bean/UserBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/adminer/AdminerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/adminer/AdminerDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/client/ClientDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/client/ClientDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/login/LoginDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/login/LoginDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/operator/OperatorDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/operator/OperatorDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/operator/OperatorDaoImpl$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/operator/OperatorDaoImpl$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/operator/OperatorDaoImpl$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/dao/operator/OperatorDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/adminer/AdminerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/adminer/AdminerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/client/ClientService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/client/ClientServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/login/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/login/LoginServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/operator/OperatorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/service/operator/OperatorServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/util/InsertData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/util/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/util/filter/LoginCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ibeacon/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/action/client/ClientAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/action/login/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/action/login/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/action/operator/OperatorAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/AdminerBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/ClientBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/DeviceBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/OperatorBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/RoleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/RoleBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/adminer/AdminerDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/adminer/AdminerDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/client/ClientDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/client/ClientDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/login/LoginDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/login/LoginDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/operator/OperatorDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/operator/OperatorDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/adminer/AdminerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/adminer/AdminerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/client/ClientService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/client/ClientServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/login/LoginService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/login/LoginServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/operator/OperatorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/operator/OperatorServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/util/InsertData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/util/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/util/filter/LoginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/SignAndCheckinBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/SignAndCheckinBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -236,90 +84,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="1733" column="44" lean-forward="true" selection-start-line="1733" selection-start-column="44" selection-end-line="1733" selection-end-column="44" />
+            <state relative-caret-position="416">
+              <caret line="1477" column="23" selection-start-line="1477" selection-start-column="23" selection-end-line="1477" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#45719#45730#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ictwsn/action/notification/NotificationAction.java">
+        <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="494">
+              <caret line="184" column="35" lean-forward="true" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="129" column="37" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="139" column="90" selection-start-line="139" selection-start-column="90" selection-end-line="139" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="135" column="56" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="135" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="107" column="131" lean-forward="true" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="131" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#7;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/changeRoom.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-              <folding>
-                <element signature="e#4939#4954#0" expanded="true" />
-              </folding>
+              <caret line="172" column="16" lean-forward="true" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -336,17 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>报道组</find>
-      <find>updateClient</find>
-      <find>updateClient.</find>
-      <find>device</find>
-      <find>cb</find>
-      <find>返回</find>
-      <find>前台</find>
-      <find>Liaison</find>
-      <find>updateL</find>
-      <find>lb</find>
-      <find>searchLiasion</find>
       <find>searchLiaison</find>
       <find>sex</find>
       <find>ub</find>
@@ -366,6 +142,17 @@
       <find>addUser</find>
       <find>dnumber</find>
       <find>update</find>
+      <find>dnames</find>
+      <find>requestedMediaTypes</find>
+      <find>VIP</find>
+      <find>Pickuyo</find>
+      <find>Pickup</find>
+      <find>ByCond</find>
+      <find>Checkin</find>
+      <find>885</find>
+      <find>searchLiaisonByCondition</find>
+      <find>searchFile</find>
+      <find>ajaxReq</find>
     </findStrings>
     <replaceStrings>
       <replace>admin</replace>
@@ -377,38 +164,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ictwsn/bean/PickupVIPBean.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/bean/PickupUserBean.java" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/bean/Driver4UserBean.java" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/bean/UserDriverBean.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/userdriver/UserDriverDaoImpl.java" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/addFile.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/searchFile.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/addDriver.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/driver/DriverDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/service/driver/DriverServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/driver/DriverDao.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/service/driver/DriverService.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/signin/SigninDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/dao/signin/SigninDao.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/service/signin/SigninService.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/service/signin/SigninServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/test/1UserDao.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/test/1UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelDao.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelService.java" />
@@ -417,17 +176,45 @@
         <option value="$PROJECT_DIR$/WebRoot/pages/admin/addHotel.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/pages/admin/updateHotel.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewHotel.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/adminManageCenter.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelDaoImpl.java" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java" />
-        <option value="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ictwsn/action/notification/NotificationAction.java" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/adminManageCenter.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/changeRoom.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/newInsertRoom.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewUser.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrival.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewUserPickup.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/bean/SignAndCheckinBean.java" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrivalInfo.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchRoom.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDao.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java" />
+        <option value="$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java" />
+        <option value="$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp" />
       </list>
     </option>
   </component>
@@ -445,10 +232,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="y" value="44" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -456,90 +243,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-              <item name="adminer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="liaison" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
@@ -563,25 +274,23 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554455812370" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554824039994" />
+    <property name="last_opened_file_path" value="D:/IntelliJWorkbench" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -695,7 +404,14 @@
       <workItem from="1554132886062" duration="2330000" />
       <workItem from="1554167036059" duration="12990000" />
       <workItem from="1554274287775" duration="10652000" />
-      <workItem from="1554360436985" duration="33282000" />
+      <workItem from="1554360436985" duration="75531000" />
+      <workItem from="1554685354957" duration="4076000" />
+      <workItem from="1554721793254" duration="64000" />
+      <workItem from="1554794366391" duration="7117000" />
+      <workItem from="1554801631124" duration="19584000" />
+      <workItem from="1554876871882" duration="6689000" />
+      <workItem from="1554888138057" duration="9892000" />
+      <workItem from="1554976577718" duration="7804000" />
     </task>
     <task id="LOCAL-00001" summary="3rd Commit">
       <created>1553180256328</created>
@@ -704,11 +420,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553180256328</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3rd Commit">
+      <created>1554455882140</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554455882141</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244602000" />
+    <option name="totallyTimeSpent" value="342077000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -723,7 +446,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.18496802" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -735,19 +458,19 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32952183" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.22037423" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" weight="0.22141372" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" visible="true" weight="0.18607068" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32952183" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32952183" />
-      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32952183" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32952183" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.2099792" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32952183" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.17255718" />
-      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" weight="0.32952183" />
-      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32952183" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.17255718" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" weight="0.32952183" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32952183" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.14864865" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -760,7 +483,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.18496802" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.19669509" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -772,19 +495,19 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32952183" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.22037423" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" visible="true" weight="0.22141372" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" visible="true" weight="0.18607068" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32952183" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32952183" />
-      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32952183" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32952183" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.2099792" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32952183" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.17255718" />
-      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" weight="0.32952183" />
-      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32952183" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.17255718" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" weight="0.32952183" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32952183" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.14864865" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -804,389 +527,386 @@
     <MESSAGE value="3rd Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="3rd Commit" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="e" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="100" column="56" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="54" column="75" lean-forward="true" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#833#834#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/searchFile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="29" column="83" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/admin/AdminDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="64" column="73" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/signin/SigninDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2834">
-          <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="51" column="133" selection-start-line="51" selection-start-column="133" selection-end-line="51" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/MySQLBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="70" column="71" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="97" column="176" selection-start-line="97" selection-start-column="176" selection-end-line="97" selection-end-column="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/test/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1402">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/test/1UserService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/bean/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/test/1UserDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/test/1UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3042" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2507">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="279" selection-start-line="279" selection-end-line="279" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/driver/DriverDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/driver/DriverDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="66" selection-start-column="4" selection-end-line="91" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateDriver.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326">
-          <caret line="57" column="89" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addHotel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewDriver.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="74" column="99" lean-forward="true" selection-start-line="74" selection-start-column="99" selection-end-line="74" selection-end-column="99" />
+        <state relative-caret-position="468">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateHotel.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
+        <state relative-caret-position="-709">
           <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewHotel.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#li#1;n#ul#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#li#2;n#ul#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="2756">
+          <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="96" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-3004">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrival.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/pages/adminManageCenter.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="638">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/bean/HotelBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.springframework.web-3.0.5.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2652" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addDriver.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="136" column="15" lean-forward="true" selection-start-line="124" selection-start-column="8" selection-end-line="136" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/file/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="44" column="67" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="67" />
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateDriver.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        <state relative-caret-position="2184">
+          <caret line="84" selection-start-line="84" selection-end-line="135" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUserPickup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/bean/FileBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/poi-3.9-20121203.jar!/org/apache/poi/hssf/usermodel/HSSFWorkbook.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="665" selection-start-line="665" selection-end-line="665" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO8FE09AC7/ClientAction.java" />
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/searchFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="51" column="103" selection-start-line="51" selection-start-column="103" selection-end-line="51" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/bean/SignAndCheckinBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
-            <element signature="e#1427#1438#0" expanded="true" />
-            <element signature="e#2817#2828#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelService.java">
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/poi-3.9-20121203.jar!/org/apache/poi/hssf/usermodel/HSSFCell.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="6578">
+          <caret line="306" column="23" selection-start-line="306" selection-start-column="23" selection-end-line="306" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="107" column="131" lean-forward="true" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="131" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#7;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-668">
+          <caret line="67" column="135" selection-start-line="67" selection-start-column="135" selection-end-line="67" selection-end-column="135" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="135" column="56" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="135" selection-end-column="56" />
+        <state relative-caret-position="780">
+          <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4163">
-          <caret line="170" column="1" lean-forward="true" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
+        <state relative-caret-position="392">
+          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="55" column="74" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="74" />
+        <state relative-caret-position="-726">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrivalInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="139" column="90" selection-start-line="139" selection-start-column="90" selection-end-line="139" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="129" column="37" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/bean/HotelRoomBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="e#4939#4954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="306">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="277">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="53" column="134" selection-start-line="53" selection-start-column="134" selection-end-line="53" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="165" column="82" selection-start-line="165" selection-start-column="4" selection-end-line="165" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="20" column="83" selection-start-line="20" selection-start-column="83" selection-end-line="20" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="233" column="13" lean-forward="true" selection-start-line="233" selection-start-column="13" selection-end-line="233" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addDriver.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-955" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addHotel.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1231">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3041" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2798">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/newInsertRoom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-368">
+          <caret line="180" column="21" lean-forward="true" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="67" column="135" selection-start-line="67" selection-start-column="135" selection-end-line="67" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchRoom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2626">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="153" column="104" selection-start-line="153" selection-start-column="104" selection-end-line="153" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="374" selection-start-line="374" selection-end-line="374" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar!/org/springframework/web/servlet/mvc/annotation/AnnotationMethodHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.springframework.web-3.0.5.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/changeRoom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="172" column="16" lean-forward="true" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="1733" column="44" lean-forward="true" selection-start-line="1733" selection-start-column="44" selection-end-line="1733" selection-end-column="44" />
+        <state relative-caret-position="416">
+          <caret line="1477" column="23" selection-start-line="1477" selection-start-column="23" selection-end-line="1477" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#45719#45730#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ictwsn/action/notification/NotificationAction.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="494">
+          <caret line="184" column="35" lean-forward="true" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1209,7 +929,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Spring (Ibeacon)|Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1244,7 +964,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|Ibeacon</last-edited>
+          <last-edited>Ibeacon</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

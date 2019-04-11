@@ -11,9 +11,9 @@
 <%
     String path = request.getContextPath();
     //获取当前角色的权限信息
-    RoleBean rb = null;
-    if ((RoleBean) session.getAttribute("RoleBean") != null) {
-        rb = (RoleBean) session.getAttribute("RoleBean");
+    AdminBean rb = null;
+    if ((AdminBean) session.getAttribute("admin") != null) {
+        rb = (AdminBean) session.getAttribute("admin");
     }
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -34,73 +34,79 @@
 
 <div class="panel admin-panel">
     <div class="panel-head">
-        <strong class="icon-reorder"> 分配司机</strong> <a href=""
-                                                              style="float:right; display:none;">添加字段</a>
+        <strong class="icon-reorder"> 宾客信息列表</strong> <a href=""
+                                                         style="float:right; display:none;">添加字段</a>
     </div>
     <div class="padding border-bottom">
-        <form method="get" action="searchDispatchByCondition.do"
-              id="searchDispatchByConditionForm" name="searchDispatchByConditionForm">
+        <form method="get" action="searchUserArrivalByCondition.do"
+              id="searchUserByConditionForm" name="searchUserByConditionForm">
             <ul class="search" style="padding-left:10px;">
                 <li>
-                        <a class="button border-main icon-plus-square-o" href="#"> 分配信息查询</a>
+
+
+                    <a class="button border-main icon-plus-square-o"
+                       href="#"> 宾客信息查询</a>
+
+
                 </li>
-                <li>
-                        <select name="selectSearchType" class="input"
-                                id="selectSearchType" style="width:200px; line-height:17px;"
-                                onchange="setSearchType();">
-                            <option value="userName">宾客姓名</option>
-                        </select>
+
+
+                <li><select name="selectSearchType" class="input"
+                            id="selectSearchType" style="width:200px; line-height:17px;"
+                            onchange="setSearchType();">
+
+                    <option value="userName">宾客姓名</option>
+                    <option value="workPlace">宾客单位</option>
+                    <option value="arrivalStation">抵达站</option>
+
+
+                </select>
                 </li>
 
                 <li><input type="text" placeholder="请输入搜索关键字" name="keyword" id="keyword" class="input" style="width:250px; line-height:17px;display:inline-block" />
                     <input type="hidden" value="userName" name="type" id="type"/>
                     <input type="hidden" value="1" name="page" id="page"/>
-                    <a href="javascript:searchDispatchByCondition();"
-                        class="button border-main icon-search">搜索
-                    </a>
-                </li>
-
+                    <a href="javascript:searchUserByCondition();"
+                       class="button border-main icon-search">搜索</a></li>
                 <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">共有数据：<strong>${totalCount}</strong>条</span></li>
             </ul>
         </form>
     </div>
-
     <table class="table table-hover text-center">
         <tr>
-            <th width="160px">姓名</th>
-            <th width="100px">抵达日期</th>
-            <th width="120px">抵达时间</th>
-            <th width="80px">航班/车次</th>
-            <th width="200px">接站地址</th>
-            <th width="150px">联系方式</th>
-            <th width="140px">酒店名称</th>
-            <th width="80px">司机姓名</th>
-            <th width="180px">司机联系方式</th>
-            <th width="120px">车牌号</th>
-            <th width="120px">备注</th>
-            <th width="124px">操作</th>
+            <th width="100px">姓名</th>
+            <th width="150px">手机号码</th>
+            <th width="200px">角色</th>
+            <th width="150px">人员类别</th>
+            <th width="300px">所在单位</th>
+            <th width="200px">抵达日期</th>
+            <th width="200px">抵达时间</th>
+            <th width="200px">抵达车次</th>
+            <th width="200px">抵达车站</th>
+            <th width="200px">酒店名称</th>
+            <th width="200px">房型</th>
+            <th width="300px">备注</th>
+            <th width="150px">操作</th>
         </tr>
-        <c:forEach var="list" items="${ddllist}">
-            <tr id="device_tr_${list.userNumber}">
-                <td width="160px" title="${list.userName}">${list.userName}</td>
-                <td width="100px">${list.arrivalDate}</td>
-                <td width="120px">${list.arrivalTime}</td>
-                <td width="80px">${list.arrivalNumber}</td>
+        <c:forEach var="list" items="${dblist}">
+            <tr id="${list.userNumber}">
+                <td width="100px" title="${list.userName}">${list.userName}</td>
+                <td width="150px">${list.userNumber}</td>
+                <td width="200px">${list.userRole ==  0 ? "列席代表" : (list.userRole == 1 ? "正式参会代表" : "随行人员")}</td>
+                <td width="150px" title="${list.userSorts}">${list.userSorts}</td>
+                <td width="300px">${list.workPlace}</td>
+                <td width="200px">${list.arrivalDate}</td>
+                <td width="200px">${list.arrivalTime}</td>
+                <td width="200px">${list.arrivalNumber}</td>
                 <td width="200px" title="${list.arrivalStation}">${list.arrivalStation}</td>
-                <td width="150px" title="${list.userNumber}">${list.userNumber}</td>
-                <td width="140px">${list.hname}</td>
-                <td width="80px">${list.dname}</td>
-                <td width="180px" title="${list.dnumber}">${list.dnumber}</td>
-                <td width="120px">${list.dplate}</td>
-                <td width="120px">${list.remark}</td>
-                <td width="124px">
-                    <c:if test="${list.dnumber == null}">
-                        <input type="button" id="editButton" onclick="javascript:window.location.href='beforeInsertDriver.do?userNumber=${list.userNumber}'" value="分配司机">&nbsp;
-                    </c:if>
-                    <c:if test="${list.dnumber != null}">
-                        <input type="button" id="deleteButton" onclick="javascript:window.location.href='beforeDispatchDriver.do?userNumber=${list.userNumber}'" value="更换司机">
-                    </c:if>
-
+                <td width="200px">${list.hname}</td>
+                <td width="200px">${list.htype}</td>
+                <td width="300px">${list.remark}</td>
+                <td width="150px">
+                    &nbsp;<input type="button" id="editButton" onclick="javascript:window.location.href='viewUserArrival.do?userNumber=${list.userNumber}'" value="更多">&nbsp;
+                    <input type="button" id="deleteButton"
+                           onclick="deleteUser(${list.userNumber})"
+                           value="删除">
                 </td>
             </tr>
         </c:forEach>
@@ -129,11 +135,9 @@
         </tr>
     </table>
 </div>
-
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/pintuer.js"></script>
 <script type="text/javascript" src="js/showBo.js"></script>
-
 <script type="text/javascript">
     function setSearchType() {
         var types = document.getElementById("selectSearchType");
@@ -144,7 +148,21 @@
             }
         }
     }
-    function searchDispatchByCondition(){
+    function deleteUser(userNumber){
+        Showbo.Msg.confirm("确定要删除该人员吗?",function(flag){
+            if(flag=='yes'){
+                $.post("deleteUser.do",{userNumber:userNumber},
+                    function(data){
+                        if(data==1){
+                            Showbo.Msg.alert("删除成功!",function (){window.location.reload();});
+                        }else{
+                            Showbo.Msg.alert("删除失败!");
+                        }
+                    });
+            }
+        });
+    }
+    function searchUserByCondition(){
         if(document.getElementById("type").value==''){
             Showbo.Msg.alert("请选择查询项!",function (){
                 document.getElementById("selectSearchType").focus();
@@ -158,10 +176,9 @@
 
             return 0;
         }
-        document.searchDispatchByConditionForm.submit();
+        document.searchUserByConditionForm.submit();
     }
 </script>
-
 </body>
 </html>
 

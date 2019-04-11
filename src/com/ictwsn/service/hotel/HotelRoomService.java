@@ -19,7 +19,8 @@ public interface HotelRoomService {
 	 */
 	public List<HotelRoomBean> searchHotelRoom(int number, int size);
 	public HotelRoomBean searchHotelRoomById(int hid);
-
+	public List<HotelRoomBean> searchHotelRoomByCondition(String type, String keyword, int number, int size);
+	public int searchHotelRoomByConditionCount(String type, String keyword);
 //	public int setUserHotel(HotelRoomBean userRoom);
 //	public int setUserHotel(List<HotelRoomBean> userRooms);
 }

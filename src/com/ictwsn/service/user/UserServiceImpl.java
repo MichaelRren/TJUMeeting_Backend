@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public boolean deleteUser(String userNumber) {
+	public int deleteUser(String userNumber) {
 		return dao.deleteUser(userNumber);
 	}
 
@@ -154,4 +154,19 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public int getUserCount(){return dao.getUserCount();}
+
+	/**
+	 * 更新宾馆情况
+	 */
+	public int updateUserHotel(UserBean userBean){return dao.updateUserHotel(userBean);}
+
+	/**
+	 * Excel增加条件搜索
+	 */
+	public List<UserBean> searchUserByCondition(String type, String keyword) {return dao.searchUserByCondition(type, keyword);}
+
+    /**
+     * 报到组导出Excel搜索所有用户
+     */
+    public List<UserBean> searchUser(){return dao.searchUser();}
 }

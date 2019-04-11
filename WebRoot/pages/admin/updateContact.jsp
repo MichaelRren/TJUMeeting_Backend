@@ -90,6 +90,26 @@
 <script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript" src="js/showBo.js"></script>
 <script type="text/javascript">
+    $(function(){
+        //获得hotel下拉列表
+        $("#userNumber").change(function(){
+            var userNumber = $("#userNumber").val();  //获取
+
+            // alert(userNumber);
+
+            $.ajax({
+                url: "getAjaxUser.do",
+                type: "POST",
+                data:"userNumber="+userNumber,
+                // async: false,
+                success: function (userBean) {
+                    // alert(userBean.userName);
+                    $("#userName").val(userBean.userName);
+                }
+
+            })
+        })
+    })
 
     function updateContact() {
         var lname = document.getElementById("lname").value;

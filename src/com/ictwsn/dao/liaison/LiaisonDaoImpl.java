@@ -136,13 +136,42 @@ public class LiaisonDaoImpl extends MySQLBaseDao implements LiaisonDao{
 	public List<LiaisonBean> searchLiaisonByCondition(String type, String keyword, int number, int size) {
 		List<LiaisonBean> lbs = new ArrayList<LiaisonBean>();
 		if (type != null) {
+			String sql = "select * from Liaison where " + type + " = ? limit ?,?";
+			try {
+				conn = CurrentConn.getInstance().getConn();
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, keyword);
+				pst.setInt(2, number);
+				pst.setInt(3, size);
+				rs = pst.executeQuery();
+				while (rs.next()) {
+					LiaisonBean lb = new LiaisonBean();
+					lb.setLnumber(rs.getString(1));
+					lb.setLname(rs.getString(2));
+					lb.setUserNumber(rs.getString(3));
+
+					lbs.add(lb);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				CurrentConn.getInstance().closeResultSet(rs);
+				CurrentConn.getInstance().closePreparedStatement(pst);
+				CurrentConn.getInstance().closeConnection(conn);
+			}
+		}
+		return lbs;
+	}
+
+	public List<LiaisonBean> searchLiaisonByCondition(String type, String keyword) {
+		List<LiaisonBean> lbs = new ArrayList<LiaisonBean>();
+		if (type != null) {
 			String sql = "select * from Liaison where " + type + " = ?";
 			try {
 				conn = CurrentConn.getInstance().getConn();
 				pst = conn.prepareStatement(sql);
 				pst.setString(1, keyword);
-				//pst.setInt(2, number);
-				//pst.setInt(3, size);
+
 				rs = pst.executeQuery();
 				while (rs.next()) {
 					LiaisonBean lb = new LiaisonBean();

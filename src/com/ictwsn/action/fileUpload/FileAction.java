@@ -50,7 +50,7 @@ public class FileAction extends HttpServlet {
     @RequestMapping("/addFileBefore.do")
     public String addOperatorBefore(HttpServletRequest request,HttpSession session,Model model){
         try{
-//            RoleBean rb=(RoleBean)session.getAttribute("RoleBean");
+
             if(session.getAttribute("admin") != null){
                 return GetHttp.isMobileDevice(request)?"pages/admin/addFile":"MobilePages/file/addFile";
             }else{
@@ -108,7 +108,8 @@ public class FileAction extends HttpServlet {
                             out = new FileOutputStream(fileNamePrefix + dateStr + fileNameSuffix);
                             out.write(bytes);
                             out.close();
-                            fb.setFileUrl("uploadFiles/"  + dateStr + fileNameSuffix);
+//                            fb.setFileUrl("uploadFiles/"  + dateStr + fileNameSuffix);
+                            fb.setFileUrl(fileNamePrefix  + dateStr + fileNameSuffix);
                         }
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -161,9 +162,10 @@ public class FileAction extends HttpServlet {
         try{
             FileBean fb = fService.getFileById(fileId);
             String fileUrl =  fb.getFileUrl();
-            //fileUrl = "/" + fileUrl;
-            String filename = fileUrl.substring(13);
-            String webRootPath=request.getRealPath("/");
+
+            String[] array = fileUrl.split("/");
+            int length = array.length;
+            String filename = array[length];
 
             String userAgent = request.getHeader("User-Agent");
             byte[] bytes = userAgent.contains("MSIE") ? filename.getBytes()
@@ -173,10 +175,9 @@ public class FileAction extends HttpServlet {
             response.addHeader("Content-type", "appllication/octet-stream");
             response.addHeader("Content-Disposition", "attachment;filename="+filename);
 
-
 //            InputStream in = getServletContext().getResourceAsStream(filename);
-            String filePath = webRootPath + fileUrl;
-            InputStream in = new FileInputStream(filePath);
+//            String filePath = webRootPath + fileUrl;
+            InputStream in = new FileInputStream(fileUrl);
             OutputStream out = response.getOutputStream();
             byte[] buffer = new byte[1024];
             int len;
@@ -225,7 +226,7 @@ public class FileAction extends HttpServlet {
             }
 
             if(session.getAttribute("RoleBean") != null){//用户登陆
-                return GetHttp.isMobileDevice(request)?"pages/admin/searchFile":"MobilePages/file/searchFile";
+                return GetHttp.isMobileDevice(request)?"pages/file/searchFileClient":"MobilePages/file/searchFile";
             }else if(session.getAttribute("admin") != null){//管理员登陆
                 return "pages/admin/searchFile";
             }else{

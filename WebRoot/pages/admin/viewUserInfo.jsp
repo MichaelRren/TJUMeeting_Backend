@@ -38,7 +38,7 @@
                                                          style="float:right; display:none;">添加字段</a>
     </div>
     <div class="padding border-bottom">
-        <form method="post" action="searchUserByCondition.do"
+        <form method="get" action="searchUserByCondition.do"
               id="searchUserByConditionForm" name="searchUserByConditionForm">
             <ul class="search" style="padding-left:10px;">
                 <li>
@@ -57,7 +57,7 @@
 
                     <option value="userName">宾客姓名</option>
                     <option value="workPlace">宾客单位</option>
-                    <option value="arrivalStation">抵达站</option>
+                    <option value="returnStation">返程站</option>
 
 
                 </select>
@@ -79,10 +79,6 @@
             <th width="200px">角色</th>
             <th width="150px">人员类别</th>
             <th width="300px">所在单位</th>
-            <th width="200px">抵达日期</th>
-            <th width="200px">抵达时间</th>
-            <th width="200px">抵达车次</th>
-            <th width="200px">抵达车站</th>
             <th width="200px">返程日期</th>
             <th width="200px">返程时间</th>
             <th width="200px">返程车次</th>
@@ -99,10 +95,6 @@
                 <td width="200px">${list.userRole ==  0 ? "列席代表" : (list.userRole == 1 ? "正式参会代表" : "随行人员")}</td>
                 <td width="150px" title="${list.userSorts}">${list.userSorts}</td>
                 <td width="300px">${list.workPlace}</td>
-                <td width="200px">${list.arrivalDate}</td>
-                <td width="200px">${list.arrivalTime}</td>
-                <td width="200px">${list.arrivalNumber}</td>
-                <td width="200px" title="${list.arrivalStation}">${list.arrivalStation}</td>
                 <td width="200px">${list.returnDate}</td>
                 <td width="200px">${list.returnTime}</td>
                 <td width="200px">${list.returnNumber}</td>
@@ -159,6 +151,8 @@
     function deleteUser(userNumber){
         Showbo.Msg.confirm("确定要删除该人员吗?",function(flag){
             if(flag=='yes'){
+                // alert("1");
+                // alert(userNumber);
                 $.post("deleteUser.do",{userNumber:userNumber},
                     function(data){
                         if(data==1){

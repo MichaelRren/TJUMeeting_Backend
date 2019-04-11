@@ -71,7 +71,7 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>负责的宾客手机号码：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" onblur="ajaxRequest()" maxlength='20' placeholder="请输入负责的宾客手机号码(必填)" id="userNumber" name="userNumber">
+                <input type="text" class="input w50"  maxlength='20' placeholder="请输入负责的宾客手机号码(必填)" id="userNumber" name="userNumber">
                 <span id="user_number" class="c-red"></span>
             </div>
         </div>
@@ -166,29 +166,46 @@
             });
     }
 
+    $(function(){
+        // 获得hotel下拉列表
+        $("#userNumber").change(function(){
+            var userNumber = $("#userNumber").val();
+            $.ajax({
+                url: "ajaxRequest.do",
+                type: "POST",
+                data:{userNumber:userNumber},
+                dataType: "json",
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (userBean) {
+
+                    $("#userName").val(userBean.userName);
+
+                },
+                error: function () {
+                    alert("error");
+                }
+
+            })
+        })
+    })
+
     // function ajaxRequest() {
     //     var userNumber = document.getElementById("userNumber").value;
     //
-    //     alert(userNumber);
+    //     if (userNumber.length == 11)
+    //     {
+    //         $.ajax({
+    //             type: "post",
+    //             url: "ajaxRequest.do",
+    //             data: {"userNumber": userNumber},
+    //             success: function (userName) {
+    //                 alert("123");
+    //                 // alert(userName);
+    //                 $("#userName").val(userName);
     //
-    //     // if (userNumber.length == 11)
-    //     // {
-    //     //     $.ajax({
-    //     //         type: "post",   //
-    //     //         url: "ajaxRequest.do",
-    //     //         data: {"userNumber": userNumber},
-    //     //         dataType: "json",
-    //     //         success: function (data) {
-    //     //             alert("123");
-    //     //             // var userName = data.d;
-    //     //             //
-    //     //             // document.getElementById("user_name").innerHTML=userName;
-    //     //         },
-    //     //         error: function () {
-    //     //             alert("error")
-    //     //         }
-    //     //     })
-    //     // }
+    //             }
+    //         })
+    //     }
     // }
 
 

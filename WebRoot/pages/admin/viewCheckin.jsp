@@ -7,13 +7,14 @@
 --%>
 <%@ page language="java" contentType="text/html"
          import="java.util.*,com.ictwsn.bean.*" pageEncoding="UTF-8"%>
+<%@ page import="com.ictwsn.service.admin.AdminService" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
     String path = request.getContextPath();
     //获取当前角色的权限信息
-    RoleBean rb = null;
-    if ((RoleBean) session.getAttribute("RoleBean") != null) {
-        rb = (RoleBean) session.getAttribute("RoleBean");
+    AdminBean rb = null;
+    if ((AdminBean) session.getAttribute("admin") != null) {
+        rb = (AdminBean) session.getAttribute("admin");
     }
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -38,20 +39,42 @@
                                                               style="float:right; display:none;">添加字段</a>
     </div>
     <div class="padding border-bottom">
+        <form method="get" action="searchCheckinByCondition.do"
+              id="searchUserByConditionForm" name="searchUserByConditionForm">
+            <ul class="search" style="padding-left:10px;">
+                <li>
 
-        <a class="button border-main icon-plus-square-o"
-           href="#"> 导出Excel</a>
+                    <a class="button border-main icon-plus-square-o"
+                       href="outputToCheckinExcel.do"> 导出Excel</a>
 
-        <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">共有数据：<strong>${totalCount}</strong>条</span></li>
+                </li>
+
+                <li><select name="selectSearchType" class="input"
+                            id="selectSearchType" style="width:200px; line-height:17px;"
+                            onchange="setSearchType();">
+
+                    <option value="arrivalStation">抵达站</option>
 
 
+                </select>
+                </li>
+
+                <li><input type="text" placeholder="请输入搜索关键字" name="keyword" id="keyword" class="input" style="width:250px; line-height:17px;display:inline-block" />
+                    <input type="hidden" value="arrivalStation" name="type" id="type"/>
+                    <input type="hidden" value="1" name="page" id="page"/>
+                    <a href="javascript:searchUserByCondition();"
+                       class="button border-main icon-search">搜索</a></li>
+                <li style="padding-right:10px;float:right;"><span class="r" style="float:right;">共有数据：<strong>${totalCount}</strong>条</span></li>
+            </ul>
+        </form>
     </div>
+
     <table class="table table-hover text-center">
         <tr>
 
             <th width="100px">姓名</th>
             <th width="80px">性别</th>
-            <th width="200px">用户角色</th>
+            <th width="200px">人员类别</th>
             <th width="200px">手机号码</th>
             <th width="200px">工作单位</th>
             <th width="120px">职务</th>
@@ -65,16 +88,16 @@
             <tr id="device_tr_${list.userNumber}">
                 <td width="100px" title="${list.userName}">${list.userName}</td>
                 <td width="80px">${list.sex}</td>
-                <td width="200px">${list.userRole ==  0 ? "列席代表" : (list.userRole == 1 ? "正式参会代表" : "随行人员")}</td>
+                <td width="200px">${list.userSorts})}</td>
                 <td width="200px">${list.userNumber}</td>
                 <td width="200px">${list.workPlace}</td>
                 <td width="120px">${list.position}</td>
                 <td width="120px">
 
-                        ${list.userRole == 1 ? "A组(VIP)" : "B组(普通)"}
+                        ${list.userRole == 1 ? "A组(VIP)" : "B组(普通宾客)"}
                 </td>
                 <td width="160px">${list.arrivalStation}</td>
-                <td width="150px">${list.arrivalDate}</td>
+                <td width="150px">${list.arrive}</td>
                 <td width="140px">${list.hotel}</td>
                 <td width="80px" title="${list.signintime}">${list.status == true ? list.signintime : "未填写报到时间"}</td>
             </tr>
@@ -108,6 +131,40 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/pintuer.js"></script>
 <script type="text/javascript" src="js/showBo.js"></script>
+<script type="text/javascript">
+    function setSearchType() {
+        var types = document.getElementById("selectSearchType");
+        for ( var i = 0; i < types.length; i++) {
+            if (types[i].selected == true) {
+                document.getElementById("type").value = types[i].value;
+                break;
+            }
+        }
+    }
+    function searchUserByCondition(){
+        if(document.getElementById("type").value==''){
+            Showbo.Msg.alert("请选择查询项!",function (){
+                document.getElementById("selectSearchType").focus();
+            });
+            return 0;
+        }
+        if(document.getElementById("keyword").value==''){
+            alert("请输入查询参数!");
+
+            document.getElementById("keyword").focus();
+
+            return 0;
+        }
+        document.searchUserByConditionForm.submit();
+    }
+
+    $(function(){
+        $("#keyword").change(function () {
+            var keyword = $("#keyword").val();
+        })
+    })
+
+</script>
 
 </body>
 </html>

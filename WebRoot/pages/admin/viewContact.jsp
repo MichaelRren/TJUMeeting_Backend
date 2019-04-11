@@ -38,7 +38,7 @@
 <div class="panel admin-panel">
     <div class="panel-head"><strong class="icon-reorder"> 联络人员列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
     <div class="padding border-bottom">
-        <form method="post" action="searchContactByCondition.do"
+        <form method="get" action="searchContactByCondition.do"
               id="searchContactByConditionForm" name="searchContactByConditionForm">
             <ul class="search" style="padding-left:10px;">
                 <li> <a class="button border-main icon-plus-square-o" href="beforeAddContact.do"> 添加联络人员</a> </li>

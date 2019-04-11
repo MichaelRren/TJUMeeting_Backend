@@ -7,7 +7,7 @@ import java.util.List;
 public interface UserDao {
 	
 	public int addUser(UserBean ub);  //增加
-	public boolean deleteUser(String userNumber);	 	 //删除
+	public int deleteUser(String userNumber);	 	 //删除
 	public List<UserBean> searchUser(int number, int size);		 	 //查询all
 	public List<UserBean> searchUserASCReturnTime(int number, int size);
 	public int updateUser(UserBean ub);		//修改
@@ -18,4 +18,19 @@ public interface UserDao {
 	public int getVIPCount();
 	public int getUserCount();	//普通宾客接站组
 	public int setUserHotel(UserBean userRoom);
+
+
+	/**
+	 * 更新宾馆
+	 */
+	public int updateUserHotel(UserBean userBean);
+
+	/**
+	 * 为Excel增加条件搜索
+	 */
+	public List<UserBean> searchUserByCondition(String type, String keyword);
+    /**
+     * 报到组导出Excel 查询所有用户
+     */
+    public List<UserBean> searchUser();
 }

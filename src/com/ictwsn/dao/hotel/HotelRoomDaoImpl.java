@@ -5,6 +5,7 @@ import com.ictwsn.dao.MySQLBaseDao;
 import com.ictwsn.util.CurrentConn;
 import org.springframework.stereotype.Repository;
 
+import javax.jws.soap.SOAPBinding;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -40,7 +41,7 @@ public class HotelRoomDaoImpl extends MySQLBaseDao implements HotelRoomDao{
 	@Override
 	public int updateHotelRoom(HotelRoomBean hrb) {
 		return this.jt.update("update HotelRoom set Hname=?,Htype=?,Hprice=?,Hnumber=? where Hid=?",
-				new Object[]{hrb.getHnumber(),hrb.getHtype(),hrb.getHprice(),hrb.getHnumber(),hrb.getHid()});
+				new Object[]{hrb.getHname(),hrb.getHtype(),hrb.getHprice(),hrb.getHnumber(), hrb.getHid()});
 	}
 
 	@Override
@@ -230,5 +231,76 @@ public class HotelRoomDaoImpl extends MySQLBaseDao implements HotelRoomDao{
 			CurrentConn.getInstance().closeConnection(conn);
 		}
 		return hrb;
+	}
+
+	/**
+		新增条件查询
+	 */
+	public List<HotelRoomBean> searchHotelRoomByCondition(String type, String keyword, int number, int size) {
+		List<HotelRoomBean> hrb = new ArrayList<HotelRoomBean>();
+		if (type != null) {
+			String sql = "select * from HotelRoom where " + type + " = ? limit ?,?";
+			try {
+				conn = CurrentConn.getInstance().getConn();
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, keyword);
+				pst.setInt(2, number);
+				pst.setInt(3, size);
+
+				rs = pst.executeQuery();
+				while (rs.next()) {
+
+					HotelRoomBean hb = new HotelRoomBean();
+
+					hb.setHid(rs.getInt(1));
+					hb.setHname(rs.getString(2));
+					hb.setHtype(rs.getString(3));
+					hb.setHprice(rs.getInt(4));
+					hb.setHnumber(rs.getInt(5));
+
+					hrb.add(hb);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				CurrentConn.getInstance().closeResultSet(rs);
+				CurrentConn.getInstance().closePreparedStatement(pst);
+				CurrentConn.getInstance().closeConnection(conn);
+			}
+		}
+		return hrb;
+	}
+
+	public int searchHotelRoomByConditionCount(String type, String keyword) {
+		List<HotelRoomBean> hrb = new ArrayList<HotelRoomBean>();
+		if (type != null) {
+			String sql = "select * from HotelRoom where " + type + " = ?";
+			try {
+				conn = CurrentConn.getInstance().getConn();
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, keyword);
+
+				rs = pst.executeQuery();
+				while (rs.next()) {
+
+					HotelRoomBean hb = new HotelRoomBean();
+
+					hb.setHid(rs.getInt(1));
+					hb.setHname(rs.getString(2));
+					hb.setHtype(rs.getString(3));
+					hb.setHprice(rs.getInt(4));
+					hb.setHnumber(rs.getInt(5));
+
+					hrb.add(hb);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				CurrentConn.getInstance().closeResultSet(rs);
+				CurrentConn.getInstance().closePreparedStatement(pst);
+				CurrentConn.getInstance().closeConnection(conn);
+			}
+		}
+		return hrb.size();
 	}
 }

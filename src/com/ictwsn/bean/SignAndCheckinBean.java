@@ -25,6 +25,33 @@ public class SignAndCheckinBean {
     private String hotel; //预定房间
     private String remark; //备注
     private String sex;
+    private String userSorts;
+    private String arrive;
+    private String testDate;
+
+    public String getTestDate() {
+        return testDate;
+    }
+
+    public void setTestDate(String testDate) {
+        this.testDate = testDate;
+    }
+
+    public String getArrive() {
+        return arrive;
+    }
+
+    public void setArrive(String arrive) {
+        this.arrive = arrive;
+    }
+
+    public String getUserSorts() {
+        return userSorts;
+    }
+
+    public void setUserSorts(String userSorts) {
+        this.userSorts = userSorts;
+    }
 
     public String getSex() {
         return sex;

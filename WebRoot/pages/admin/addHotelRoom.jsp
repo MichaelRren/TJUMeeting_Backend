@@ -146,7 +146,7 @@
                     Showbo.Msg.alert("酒店房间添加成功!",function(){window.location='viewHotelRoom.do?page=1';});
 
                 } else {
-                    Showbo.Msg.alert("已添加过该类型酒店房间!");
+                    Showbo.Msg.alert("已添加过该房间!");
                 }
             });
     }

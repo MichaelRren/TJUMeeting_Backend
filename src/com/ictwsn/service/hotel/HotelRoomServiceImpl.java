@@ -54,6 +54,14 @@ public class HotelRoomServiceImpl extends MySQLBaseDao implements HotelRoomServi
 	public List<HotelRoomBean> searchHotelRoom(int number, int size){return dao.searchHotelRoom(number, size);}
 
 	public HotelRoomBean searchHotelRoomById(int hid){return dao.searchHotelRoomById(hid);}
+	public List<HotelRoomBean> searchHotelRoomByCondition(String type, String keyword, int number, int size)
+	{
+		return dao.searchHotelRoomByCondition(type, keyword, number, size);
+	}
+	public int searchHotelRoomByConditionCount(String type, String keyword)
+	{
+		return dao.searchHotelRoomByConditionCount(type, keyword);
+	}
 
 //	public int setUserHotel(HotelRoomBean userRoom){
 //		return dao.setUserHotel(userRoom);

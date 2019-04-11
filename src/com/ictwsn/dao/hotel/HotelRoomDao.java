@@ -21,6 +21,8 @@ public interface HotelRoomDao {
 	 */
 	public List<HotelRoomBean> searchHotelRoom(int number, int size);	//分页功能的查询
 	public HotelRoomBean searchHotelRoomById(int hid);					//按照id查询room
+	public List<HotelRoomBean> searchHotelRoomByCondition(String type, String keyword, int number, int size);
+	public int searchHotelRoomByConditionCount(String type, String keyword);
 
 //	public int setUserHotel(HotelRoomBean userRoom);
 //	public int setUserHotel(List<HotelRoomBean> userRooms);

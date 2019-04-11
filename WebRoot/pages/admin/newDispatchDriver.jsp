@@ -63,6 +63,13 @@
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>抵达日期：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input w50" value="${ubl.arrivalTime}" readonly="readonly" maxlength='20' placeholder="请输入抵达时间(必填)" id="workerNumber" name="workerNumber">
+                <span id="worker_number" class="c-red"></span>
+            </div>
+        </div>
+        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>航班/车次：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input w50" value="${ubl.arrivalNumber}" maxlength='20' readonly="readonly" placeholder="请输入航班/车次(必填)" id="arrivalNumber" name="arrivalNumber">
@@ -74,13 +81,6 @@
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input w50" value="${ubl.arrivalStation}" readonly="readonly" maxlength='20' placeholder="请输入接站地点(必填)" id="arrivalStation" name="arrivalStation">
                 <span id="arrival_station" class="c-red"></span>
-            </div>
-        </div>
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>一行人数：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input w50" value="${ubl.workerNumber==null?"无":"一人"}" readonly="readonly" maxlength='20' placeholder="请输入一行人数(必填)" id="workerNumber" name="workerNumber">
-                <span id="worker_number" class="c-red"></span>
             </div>
         </div>
         <div class="row cl">
