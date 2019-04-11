@@ -10,47 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8fa3748-a8ec-42ce-aefe-946862e1a9c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/changeRoom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/newInsertRoom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchRoom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrival.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserArrivalInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ibeacon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ibeacon.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/addHotelRoom.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/dispatchDriver.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/newDispatchDriver.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/updateContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/updateHotelRoom.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewCheckin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewDispatchDriver.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewHotelRoom.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewSign.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserPickup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewUserPickup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/admin/viewVIPPickup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/pages/adminManageCenter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/pages/adminManageCenter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/adminer/AdminerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/classes/com/ictwsn/action/adminer/AdminerAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Ibeacon_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/adminer/AdminerAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ibeacon/com/ictwsn/action/adminer/AdminerAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/action/adminer/AdminerAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/action/fileUpload/FileAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/bean/SignAndCheckinBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/bean/SignAndCheckinBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/hotel/HotelRoomDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/liaison/LiaisonDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/dao/user/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/hotel/HotelRoomServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/liaison/LiaisonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ictwsn/service/user/UserServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,11 +53,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/addContact.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
               <caret line="184" column="35" lean-forward="true" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUser.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -255,6 +224,41 @@
             <path>
               <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ictwsn" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="adminer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ibeacon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ibeacon" type="462c0819:PsiDirectoryNode" />
               <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -280,7 +284,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554824039994" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554989070347" />
     <property name="last_opened_file_path" value="D:/IntelliJWorkbench" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -411,7 +415,7 @@
       <workItem from="1554801631124" duration="19584000" />
       <workItem from="1554876871882" duration="6689000" />
       <workItem from="1554888138057" duration="9892000" />
-      <workItem from="1554976577718" duration="7804000" />
+      <workItem from="1554976577718" duration="8090000" />
     </task>
     <task id="LOCAL-00001" summary="3rd Commit">
       <created>1553180256328</created>
@@ -427,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554455882141</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refine">
+      <created>1554988874138</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554988874139</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342077000" />
+    <option name="totallyTimeSpent" value="342363000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -446,7 +457,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.1988273" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -458,7 +469,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32952183" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.22037423" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" visible="true" weight="0.18607068" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49946696" visible="true" weight="0.18607068" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32952183" />
@@ -525,7 +536,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3rd Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd Commit" />
+    <MESSAGE value="Refine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refine" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -562,13 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2756">
           <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3004">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -907,6 +912,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="184" column="35" lean-forward="true" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/pages/admin/viewUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
         </state>
       </provider>
     </entry>
