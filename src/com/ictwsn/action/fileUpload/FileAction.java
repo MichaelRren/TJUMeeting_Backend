@@ -165,7 +165,7 @@ public class FileAction extends HttpServlet {
 
             String[] array = fileUrl.split("/");
             int length = array.length;
-            String filename = array[length];
+            String filename = array[length-1];
 
             String userAgent = request.getHeader("User-Agent");
             byte[] bytes = userAgent.contains("MSIE") ? filename.getBytes()
